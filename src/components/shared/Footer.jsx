@@ -5,7 +5,7 @@ import CartrackLogo from "../../assets/CartractLogo.png";
 const Footer = () => {
   return (
     <div className="flex flex-col h-auto font-Montserrat justify-center items-center">
-      <div className="flex flex-row relative w-full bg-cust-darker-green text-white px-24 py-16">
+      <div className="flex flex-row relative w-full bg-cust-darker-green text-white px-24 py-24">
         <div className="flex flex-col justify-start items-start w-1/2 gap-3">
           <div className="flex font-bold font-Playfair text-3xl">AgroIndo</div>
           <div className="flex flex-row font-Montserrat text-lg items-center gap-4">
@@ -28,7 +28,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col justify-center items-center w-1/2">
-          <div>
+          <div className="flex flex-col gap-4">
             <div className="font-Playfair font-bold text-2xl">
               In Cooperation With
             </div>
