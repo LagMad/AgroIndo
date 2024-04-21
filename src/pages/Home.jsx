@@ -19,8 +19,7 @@ const Home = () => {
       </div> */}
 
       {/* COMING SOON..! */}
-      <div className="flex flex-col min-h-screen pb-52 font-Playfair text-9xl justify-center items-center font-black">
-        <img className="w-52" src="/src/assets/Plant.gif" alt="Your GIF" />
+      <div className="flex flex-col min-h-screen font-Playfair text-9xl justify-center items-center font-black">
         <motion.div
           className="font-Playfair text-9xl font-black text-cust-dark-brown"
           animate={{ scale: [1, 1.1, 1] }}
