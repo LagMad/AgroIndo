@@ -16,11 +16,11 @@ const Button = ({
   const getButtonVariation = (variation, path) => {
     switch (variation) {
       case "primary-rectangle":
-        return "py-2 md:py-2.5 px-3 md:px-8 bg-cust-orange-normal hover:bg-white rounded-xl text-white hover:text-cust-orange-normal border-transparent border-2 hover:border-2 hover:border-cust-orange-normal font-semibold";
+        return "text-3xl py-2 md:py-2.5 px-3 md:px-8 bg-cust-dark-green hover:bg-cust-darker-green rounded-full text-cust-light-cream hover:text-cust-orange-normal border-transparent border-2 hover:border-2 hover:border-cust-darker-green font-black drop-shadow-lg";
       case "secondary-rectangle":
-        return "py-2 md:py-2.5 px-3 md:px-8 bg-white hover:bg-cust-orange-normal text-cust-orange-normal hover:text-white rounded-xl font-semibold border-2 border-cust-orange-normal hover:border-2 hover:border-white";
+        return "text-[14px] py-1 md:py-2 px-7 md:px-12 bg-cust-dark-green hover:bg-cust-darker-green rounded-full text-cust-light-cream hover:text-cust-light-cream border-transparent border-2 hover:border-2 hover:border-cust-darker-green font-extrabold drop-shadow-lg";
       case "primary-round":
-        return "bg-cust-green-normal hover:bg-white py-3 px-3 rounded-full text-white hover:text-cust-green-normal border-transparent border-2 hover:border-2 hover:border-white drop-shadow-lg";
+        return "bg-cust-dark-green hover:bg-cust-darker-green py-2 px-4 rounded-full text-cust-light-cream border-transparent border-2 hover:border-2 hover:border-cust-darker-green font-extrabold drop-shadow-lg";
       case "secondary-round":
         return "bg-white hover:bg-cust-green-normal py-3 px-3 text-cust-green-normal hover:text-white rounded-full";
       case "navbar":
@@ -38,7 +38,7 @@ const Button = ({
       onClick={onClick}
       disabled={disabled}
       className={`${getButtonVariation(variation, path)}
-       font-semibold text-xl md:text-xl transition-colors duration-300 ${className}`}
+       transition-colors duration-300 font-Montserrat ${className}`}
     >
       {children}
     </button>

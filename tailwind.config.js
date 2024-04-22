@@ -24,7 +24,13 @@ export default {
         'cust-yellow' : '#EEC759'
       },
       backgroundImage: {
-        'Hero1' : "url('/src/assets/Hero1.png')"
+        'Hero1' : "url('/src/assets/Hero1.png')",
+        'HomeBG' : "url('/src/assets/HomeBG.png')",
+        'AboutPict1' : "url('/src/assets/AboutSpicesPict1.jpg')",
+        'AboutPict2' : "url('/src/assets/AboutSpicesPict2.jpg')",
+        'Konjac' : "url('/src/assets/Konjac.png')",
+        'Kunyit' : "url('/src/assets/Kunyit.jpg')",
+        'Jahe' : "url('/src/assets/Jahe.jpg')"
       }
     }
   },
