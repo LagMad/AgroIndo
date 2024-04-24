@@ -3,8 +3,8 @@ import React from "react";
 const Location = ({ fillColor, width, height }) => {
   return (
     <svg
-      width={width == "" ? "24" : width}
-      height={height == "" ? "30" : height}
+      width={width === "" ? "24" : width}
+      height={height === "" ? "30" : height}
       viewBox="0 0 24 30"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -30,15 +30,15 @@ const Location = ({ fillColor, width, height }) => {
 const Email = ({ fillColor, width, height }) => {
   return (
     <svg
-      width={width == "" ? "29" : width}
-      height={height == "" ? "23" : height}
+      width={width === "" ? "29" : width}
+      height={height === "" ? "23" : height}
       viewBox="0 0 29 23"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
         d="M2.73352 3.88842L11.8368 10.7158C13.4029 11.8905 15.5564 11.8905 17.1225 10.7158L26.2258 3.88835M4.20179 21.5076H24.7575C26.3793 21.5076 27.694 20.1929 27.694 18.5711V3.88842C27.694 2.26662 26.3793 0.951889 24.7575 0.951889H4.20179C2.57999 0.951889 1.26526 2.26662 1.26526 3.88842V18.5711C1.26526 20.1929 2.57999 21.5076 4.20179 21.5076Z"
-        stroke="white"
+        stroke={fillColor === "" ? "white" : fillColor}
         stroke-width="1.82267"
         stroke-linecap="round"
       />
@@ -49,8 +49,8 @@ const Email = ({ fillColor, width, height }) => {
 const WhatsApp = ({ fillColor, width, height }) => {
   return (
     <svg
-      width="50"
-      height="49"
+      width={width === "" ? "50" : width}
+      height={height === "" ? "49" : height}
       viewBox="0 0 50 49"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +63,7 @@ const WhatsApp = ({ fillColor, width, height }) => {
       />
       <path
         d="M43.75 24.5C43.75 34.6482 35.3553 42.875 25 42.875C21.0503 42.875 17.3858 41.6782 14.3635 39.6343L7.95455 41.2045L9.634 35.0326C7.50144 32.0501 6.25 28.4183 6.25 24.5C6.25 14.3518 14.6447 6.125 25 6.125C35.3553 6.125 43.75 14.3518 43.75 24.5Z"
-        fill="#B1C381"
+        fill={fillColor === "" ? "#B1C381" : fillColor}
       />
       <path
         fill-rule="evenodd"
@@ -82,13 +82,13 @@ const WhatsApp = ({ fillColor, width, height }) => {
 const Telegram = ({ fillColor, width, height }) => {
   return (
     <svg
-      width="50"
-      height="49"
+      width={width === "" ? "50" : width}
+      height={height === "" ? "49" : height}
       viewBox="0 0 50 49"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <ellipse cx="25" cy="24.5" rx="21.875" ry="21.4375" fill="#B1C381" />
+      <ellipse cx="25" cy="24.5" rx="21.875" ry="21.4375" fill={fillColor === "" ? "#B1C381" : fillColor} />
       <path
         d="M35.9165 15.6322C36.1113 14.3988 34.9147 13.4253 33.7957 13.9068L11.5075 23.4968C10.705 23.8421 10.7637 25.0333 11.596 25.293L16.1924 26.7275C17.0697 27.0012 18.0196 26.8597 18.7856 26.341L29.1484 19.3248C29.4609 19.1132 29.8015 19.5486 29.5345 19.8184L22.0752 27.3552C21.3516 28.0864 21.4952 29.3252 22.3656 29.8601L30.7171 34.9926C31.6538 35.5682 32.8589 34.9899 33.0341 33.8807L35.9165 15.6322Z"
         fill="white"
@@ -116,4 +116,31 @@ const StarDeco = () => {
   );
 };
 
-export default { Location, Email, WhatsApp, Telegram, StarDeco };
+const Compass = ({ fillColor, width, height }) => {
+  return (
+    <svg
+      width={width === "" ? "166" : width}
+      height={height === "" ? "166" : height}
+      viewBox="0 0 166 166"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M110.667 55.3333L69.1667 69.1667L55.3333 110.667L96.8333 96.8333L110.667 55.3333Z"
+        stroke="#141C24"
+        stroke-width="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M145.25 83C145.25 117.38 117.38 145.25 83 145.25C48.6203 145.25 20.75 117.38 20.75 83C20.75 48.6203 48.6203 20.75 83 20.75C117.38 20.75 145.25 48.6203 145.25 83Z"
+        stroke="#141C24"
+        stroke-width="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+export default { Location, Email, WhatsApp, Telegram, StarDeco, Compass };

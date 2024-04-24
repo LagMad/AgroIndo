@@ -25,8 +25,8 @@ const Button = ({
         return "bg-white hover:bg-cust-green-normal py-3 px-3 text-cust-green-normal hover:text-white rounded-full";
       case "navbar":
         return isActive(path)
-          ? "text-cust-orange-normal rounded-none border-b-cust-orange-normal border-b-2"
-          : "text-cust-light-active hover:text-cust-orange-normal rounded-none hover:border-b-cust-orange-normal hover:border-b-2";
+          ? "text-cust-orange-normal rounded-none border-b-cust-orange-normal border-b-2 font-Playfair text-2xl"
+          : "text-cust-light-active hover:text-cust-orange-normal rounded-none hover:border-b-cust-orange-normal hover:border-b-2 font-Playfair text-2xl";
       default:
         return "";
     }
@@ -38,7 +38,7 @@ const Button = ({
       onClick={onClick}
       disabled={disabled}
       className={`${getButtonVariation(variation, path)}
-       transition-colors duration-300 font-Montserrat ${className}`}
+       transition-colors duration-300 ${className} font-Montserrat`}
     >
       {children}
     </button>

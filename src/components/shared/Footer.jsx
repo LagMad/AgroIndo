@@ -16,15 +16,15 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex flex-row font-Montserrat text-lg items-center gap-4">
-            <SVGs.Email width={"24"} height={"30"} />
+            <SVGs.Email width={"24"} height={"30"} fillColor={""} />
             <div className="">
               Email : agroindomlg@gmail.com <br />
               Mobile : (+62)85234970431
             </div>
           </div>
           <div className="flex flex-row items-center gap-3">
-            <SVGs.WhatsApp />
-            <SVGs.Telegram />
+            <SVGs.WhatsApp width={""} fillColor={""}/>
+            <SVGs.Telegram width={""} fillColor={""}/>
           </div>
         </div>
         <div className="flex flex-col justify-center items-center w-1/2">

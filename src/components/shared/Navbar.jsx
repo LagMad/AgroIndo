@@ -1,28 +1,32 @@
 import React, { useState, useEffect } from "react";
 import Button from "../ui/Button";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+  const [isScrolled, setIsScrolled] = useState(location.pathname !== "/");
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
+    if (location.pathname === "/") {
+      const handleScroll = () => {
+        const scrollTop = window.scrollY;
+        const scrollThreshold = 200;
 
-      const scrollThreshold = 200;
+        if (scrollTop > scrollThreshold) {
+          setIsScrolled(true);
+        } else {
+          setIsScrolled(false);
+        }
+      };
 
-      if (scrollTop > scrollThreshold) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
+      window.addEventListener("scroll", handleScroll);
 
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
+  }, [location]);
 
   return (
     <nav
@@ -38,7 +42,7 @@ const Navbar = () => {
           variation={"navbar"}
           type={"button"}
           onClick={() => {
-            alert("clicked");
+            navigate("/");
           }}
         >
           HOME
@@ -47,7 +51,7 @@ const Navbar = () => {
           variation={"navbar"}
           type={"button"}
           onClick={() => {
-            alert("clicked");
+            navigate("/our-products");
           }}
         >
           OUR PRODUCTS
@@ -56,7 +60,7 @@ const Navbar = () => {
           variation={"navbar"}
           type={"button"}
           onClick={() => {
-            alert("clicked");
+            navigate("/contact-us");
           }}
         >
           CONTACT US

@@ -26,6 +26,7 @@ export default {
       backgroundImage: {
         'Hero1' : "url('/src/assets/Hero1.png')",
         'HomeBG' : "url('/src/assets/HomeBG.png')",
+        'OurProductsBG' : "url('/src/assets/OurProductsBG.png')",
         'AboutPict1' : "url('/src/assets/AboutSpicesPict1.jpg')",
         'AboutPict2' : "url('/src/assets/AboutSpicesPict2.jpg')",
         'Konjac' : "url('/src/assets/Konjac.png')",

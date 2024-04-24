@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <MainLayout>
       {/* HERO SECTION */}
-      <div className="flex flex-col h-screen w-full z-40 bg-Hero1 bg-no-repeat bg-cover bg-fixed font-bold font-Playfair -mt-16 text-xl text-white items-start justify-center px-24 gap-5">
+      <div className="flex flex-col min-h-screen w-full z-40 bg-Hero1 bg-no-repeat bg-cover bg-fixed font-bold font-Playfair -mt-16 text-xl text-white items-start justify-center px-24 gap-5">
         <div className="text-8xl font-semibold">AgroIndo</div>
         <div className="text-2xl font-semibold font-Montserrat">
           Indonesia’s Spices Exporter
@@ -59,7 +59,7 @@ const Home = () => {
             </div>
           </div>
           <div
-            className="flex flex-row min-w-screen gap-16 justify-center items-center transition-all duration-500 transform ease-in-out"
+            className="flex flex-row max-w-screen gap-16 justify-center items-center transition-all duration-500 transform ease-in-out"
             style={{
               transform: `translateX(${
                 currentIndexCard === 0
@@ -100,21 +100,21 @@ const Home = () => {
                     currentIndexCard === 0
                       ? `bg-cust-darker-green border h-5 w-12 rounded-full`
                       : "bg-cust-dark-green border h-5 w-5 rounded-full"
-                  } transition duration-500`}
+                  } transform transition-all duration-500 ease-in-out`}
                 />
                 <hr
                   className={`${
                     currentIndexCard === 1
                       ? `bg-cust-darker-green border h-5 w-12 rounded-full`
                       : "bg-cust-dark-green border h-5 w-5 rounded-full"
-                  } transition duration-500`}
+                  } transform transition-all duration-500 ease-in-out`}
                 />
                 <hr
                   className={`${
                     currentIndexCard === 2
                       ? `bg-cust-darker-green border h-5 w-12 rounded-full`
                       : "bg-cust-dark-green border h-5 w-5 rounded-full"
-                  } transition duration-500`}
+                  } transform transition-all duration-500 ease-in-out`}
                 />
               </div>
             </div>

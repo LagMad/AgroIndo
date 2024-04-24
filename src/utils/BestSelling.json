@@ -1,0 +1,18 @@
+[
+    {
+        "image": "/src/assets/DurianCoffee.jpg",
+        "name": "Durian Coffee"
+    },
+    {
+        "image": "/src/assets/BananaFlour.jpg",
+        "name": "Banana Flour (Musa paradisiaca)"
+    },
+    {
+        "image": "/src/assets/Konjac.png",
+        "name": "Konjac (Amorphophallus muelleri)"
+    },
+    {
+        "image": "/src/assets/BananaLeaf.jpg",
+        "name": "Banana Leaf"
+    }
+]
