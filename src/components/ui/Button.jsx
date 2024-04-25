@@ -16,7 +16,7 @@ const Button = ({
   const getButtonVariation = (variation, path) => {
     switch (variation) {
       case "primary-rectangle":
-        return "text-3xl py-2 md:py-2.5 px-3 md:px-8 bg-cust-dark-green hover:bg-cust-darker-green rounded-full text-cust-light-cream hover:text-cust-orange-normal border-transparent border-2 hover:border-2 hover:border-cust-darker-green font-black drop-shadow-lg";
+        return "text-xl py-2 md:py-2 px-3 md:px-10 bg-cust-dark-green hover:bg-cust-darker-green rounded-full text-cust-light-cream hover:text-cust-orange-normal border-transparent border-2 hover:border-2 hover:border-cust-darker-green font-black drop-shadow-lg";
       case "secondary-rectangle":
         return "text-[14px] py-1 md:py-2 px-7 md:px-12 bg-cust-dark-green hover:bg-cust-darker-green rounded-full text-cust-light-cream hover:text-cust-light-cream border-transparent border-2 hover:border-2 hover:border-cust-darker-green font-extrabold drop-shadow-lg";
       case "primary-round":
@@ -25,8 +25,8 @@ const Button = ({
         return "bg-white hover:bg-cust-green-normal py-3 px-3 text-cust-green-normal hover:text-white rounded-full";
       case "navbar":
         return isActive(path)
-          ? "text-cust-orange-normal rounded-none border-b-cust-orange-normal border-b-2 font-Playfair text-2xl"
-          : "text-cust-light-active hover:text-cust-orange-normal rounded-none hover:border-b-cust-orange-normal hover:border-b-2 font-Playfair text-2xl";
+          ? "text-cust-orange-normal rounded-none border-b-cust-orange-normal border-b-2 font-Playfair text-xl"
+          : "text-cust-light-active hover:text-cust-orange-normal rounded-none hover:border-b-cust-orange-normal hover:border-b-2 font-Playfair text-xl";
       default:
         return "";
     }

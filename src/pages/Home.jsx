@@ -20,7 +20,7 @@ const Home = () => {
   return (
     <MainLayout>
       {/* HERO SECTION */}
-      <div className="flex flex-col min-h-screen w-full z-40 bg-Hero1 bg-no-repeat bg-cover bg-fixed font-bold font-Playfair -mt-16 text-xl text-white items-start justify-center px-24 gap-5">
+      <div className="flex flex-col min-h-screen w-full z-40 bg-Hero1 bg-no-repeat bg-cover bg-fixed font-bold font-Playfair -mt-16 text-xl text-cust-light-cream items-start justify-center px-24 gap-5">
         <div className="text-8xl font-semibold">AgroIndo</div>
         <div className="text-2xl font-semibold font-Montserrat">
           Indonesia’s Agriculture Exporter
@@ -28,12 +28,12 @@ const Home = () => {
       </div>
 
       {/* THE REST */}
-      <div className="flex flex-col min-h-screen w-full z-10 bg-HomeBG bg-no-repeat bg-cover">
+      <div className="flex flex-col min-h-screen w-full z-10 bg-HomeBG bg-no-repeat bg-cover -mb-16">
         {/* ABOUT US */}
-        <div className="flex flex-row min-h-screen w-full justify-center items-center px-64">
+        <div className="flex flex-row min-h-screen w-full justify-center items-center px-64 gap-28">
           <div className="flex flex-col w-5/12 text-cust-dark-green gap-4">
             <div className="font-black font-Playfair text-4xl">About Us</div>
-            <div className="font-medium font-Montserrat text-lg">
+            <div className="font-medium font-Montserrat text-[14px]">
               AgroIndo is dedicated to showcasing Indonesia's natural bounty to
               the global stage. We take pride in introducing premium-quality
               powdered products derived from Indonesia's rich agricultural
@@ -43,25 +43,25 @@ const Home = () => {
             </div>
           </div>
           <div className="flex w-7/12 justify-end items-center">
-            <div className="flex relative bg-AboutPict1 bg-cover bg-no-repeat bg-top w-[420px] h-[420px] rounded-[40px] drop-shadow-2xl">
-              <div className="absolute -left-24 -bottom-32 bg-AboutPict2 bg-cover bg-no-repeat bg-bottom w-[352px] h-[352px] rounded-[40px]" />
+            <div className="flex relative bg-AboutPict1 bg-cover bg-no-repeat bg-top w-[370px] h-[370px] rounded-[40px] drop-shadow-2xl">
+              <div className="absolute -left-24 -bottom-32 bg-AboutPict2 bg-cover bg-no-repeat bg-bottom w-[302px] h-[302px] rounded-[40px]" />
             </div>
           </div>
         </div>
 
         {/* EXPLORE OUR PRODUCTS */}
         <div className="flex flex-col min-h-screen w-full justify-center items-center gap-10 overflow-hidden">
-          <div className="flex flex-col w-full px-80 text-cust-dark-brown justify-center items-end gap-3">
+          <div className="flex flex-col w-full px-40 text-cust-dark-brown justify-center items-end gap-3">
             <div className="text-4xl font-black font-Playfair">
               Explore Our Products
             </div>
-            <div className="text-lg font-medium font-Montserrat">
+            <div className="text-[14px] font-medium font-Montserrat text-right">
               Explore our diverse range of premium powdered products from
               Indonesia's rich agricultural produce
             </div>
           </div>
           <div
-            className="flex flex-row max-w-screen gap-16 justify-center items-center transition-all duration-500 transform ease-in-out"
+            className="flex flex-row max-w-full gap-16 justify-center items-center transition-all duration-500 transform ease-in-out"
             style={{
               transform: `translateX(${
                 currentIndexCard === 0
@@ -72,21 +72,21 @@ const Home = () => {
               })`,
             }}
           >
-            <div className="flex relative bg-Konjac bg-no-repeat bg-cover w-[500px] h-[500px] justify-end items-end rounded-[40px] overflow-hidden z-0">
+            <div className="flex relative bg-Konjac bg-no-repeat bg-cover w-[350px] h-[350px] justify-end items-end rounded-[40px] overflow-hidden z-0">
               <div className="absolute w-full h-full bg-gradient-to-t from-black from-10% to-transparent to-40% z-10 opacity-30" />
               <p className="pr-7 pb-7 z-20 text-cust-light-cream text-right font-Playfair font-bold text-xl">
                 Konjac Powder <br />
                 (Armophophallus Muelleri)
               </p>
             </div>
-            <div className="flex relative bg-Kunyit bg-no-repeat bg-cover bg-center w-[500px] h-[500px] justify-end items-end rounded-[40px] overflow-hidden z-0">
+            <div className="flex relative bg-Kunyit bg-no-repeat bg-cover bg-center w-[350px] h-[350px] justify-end items-end rounded-[40px] overflow-hidden z-0">
               <div className="absolute w-full h-full bg-gradient-to-t from-black from-10% to-transparent to-40% z-10 opacity-30" />
               <p className="pr-7 pb-7 z-20 text-cust-light-cream text-right font-Playfair font-bold text-xl">
                 Turmeric Powder <br />
                 (Curcuma Longa)
               </p>
             </div>
-            <div className="flex relative bg-Jahe bg-no-repeat bg-cover bg-center w-[500px] h-[500px] justify-end items-end rounded-[40px] overflow-hidden z-0">
+            <div className="flex relative bg-Jahe bg-no-repeat bg-cover bg-center w-[350px] h-[350px] justify-end items-end rounded-[40px] overflow-hidden z-0">
               <div className="absolute w-full h-full bg-gradient-to-t from-black from-10% to-transparent to-40% z-10 opacity-30" />
               <p className="pr-7 pb-7 z-20 text-cust-light-cream text-right font-Playfair font-bold text-xl">
                 Ginger Powder <br />
@@ -121,7 +121,7 @@ const Home = () => {
               </div>
             </div>
             <div className="flex flex-row w-1/3 justify-center items-center">
-              <Button variation={"secondary-rectangle"} type={"button"}>
+              <Button variation={"secondary-rectangle"} type={"button"} onClick={() => navigate("/our-products")}>
                 See More
               </Button>
             </div>
@@ -146,13 +146,13 @@ const Home = () => {
 
         {/* CONTACT US */}
         <div className="flex flex-row h-auto w-full bg-transparent py-44 justify-center items-center">
-          <div className="flex relative flex-row h-[450px] w-full px-60 bg-cust-light-green overflow-visible justify-end items-center">
-            <div className="absolute left-52 -bottom-16 overflow-visible">
-              <img className="h-[700px]" src={ContactPlant} alt="plant" />
+          <div className="flex relative flex-row h-[350px] w-full px-20 bg-cust-light-green overflow-visible justify-end items-center">
+            <div className="absolute left-20 -bottom-16 overflow-visible">
+              <img className="h-[600px]" src={ContactPlant} alt="plant" />
             </div>
             <div className="flex flex-col w-7/12 justify-center items-end gap-5">
-              <div className="text-right text-cust-light-cream font-Playfair">
-                Mrs. Rosalina Tethool (Owner)<br/>
+              <div className="text-right text-cust-light-cream font-Montserrat font-semibold text-[14px]">
+                Mrs. Rosalina Tethool (Founder)<br/>
                 Mobile Phone: +62 823-3745-8131 (Whatsapp)<br/>
                 Whether you’re looking for answers, wish to solve a
                 problem, or just wish to let us know how we did, you’ll find
