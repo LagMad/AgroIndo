@@ -32,7 +32,7 @@ const ContactUs = () => {
               <>
                 Telegram
                 <br />
-                +62 852-3497-0431
+                (+62) 823-3745-8131
               </>
             }
           />
@@ -45,7 +45,7 @@ const ContactUs = () => {
             description={
               <>
                 WhatsApp<br/>
-                +62 852-3497-0431
+                (+62) 823-3745-8131
               </>
             }
           />

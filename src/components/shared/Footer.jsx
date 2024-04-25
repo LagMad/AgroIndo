@@ -19,7 +19,7 @@ const Footer = () => {
             <SVGs.Email width={"24"} height={"30"} fillColor={""} />
             <div className="">
               Email : agroindomlg@gmail.com <br />
-              Mobile : (+62)85234970431
+              Mobile : (+62) 823-3745-8131
             </div>
           </div>
           <div className="flex flex-row items-center gap-3">

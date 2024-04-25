@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { easeInOut, motion } from "framer-motion";
 import MainLayout from "../components/layout/MainLayout";
 import Button from "../components/ui/Button";
 import ContactPlant from "../assets/ContactPlant.png";
 
 const Home = () => {
+  const navigate = useNavigate();
   const [currentIndexCard, setCurrentIndexCard] = useState(1);
 
   const goToPreviousCards = () => {
@@ -21,7 +23,7 @@ const Home = () => {
       <div className="flex flex-col min-h-screen w-full z-40 bg-Hero1 bg-no-repeat bg-cover bg-fixed font-bold font-Playfair -mt-16 text-xl text-white items-start justify-center px-24 gap-5">
         <div className="text-8xl font-semibold">AgroIndo</div>
         <div className="text-2xl font-semibold font-Montserrat">
-          Indonesia’s Spices Exporter
+          Indonesia’s Agriculture Exporter
         </div>
       </div>
 
@@ -73,22 +75,22 @@ const Home = () => {
             <div className="flex relative bg-Konjac bg-no-repeat bg-cover w-[500px] h-[500px] justify-end items-end rounded-[40px] overflow-hidden z-0">
               <div className="absolute w-full h-full bg-gradient-to-t from-black from-10% to-transparent to-40% z-10 opacity-30" />
               <p className="pr-7 pb-7 z-20 text-cust-light-cream text-right font-Playfair font-bold text-xl">
-                Konjac <br />
-                (Porang)
+                Konjac Powder <br />
+                (Armophophallus Muelleri)
               </p>
             </div>
             <div className="flex relative bg-Kunyit bg-no-repeat bg-cover bg-center w-[500px] h-[500px] justify-end items-end rounded-[40px] overflow-hidden z-0">
               <div className="absolute w-full h-full bg-gradient-to-t from-black from-10% to-transparent to-40% z-10 opacity-30" />
               <p className="pr-7 pb-7 z-20 text-cust-light-cream text-right font-Playfair font-bold text-xl">
                 Turmeric Powder <br />
-                (Serbuk Kunyit)
+                (Curcuma Longa)
               </p>
             </div>
             <div className="flex relative bg-Jahe bg-no-repeat bg-cover bg-center w-[500px] h-[500px] justify-end items-end rounded-[40px] overflow-hidden z-0">
               <div className="absolute w-full h-full bg-gradient-to-t from-black from-10% to-transparent to-40% z-10 opacity-30" />
               <p className="pr-7 pb-7 z-20 text-cust-light-cream text-right font-Playfair font-bold text-xl">
                 Ginger Powder <br />
-                (Serbuk Jahe)
+                (Zingiber Officinale Rosc.)
               </p>
             </div>
           </div>
@@ -150,29 +152,21 @@ const Home = () => {
             </div>
             <div className="flex flex-col w-7/12 justify-center items-end gap-5">
               <div className="text-right text-cust-light-cream font-Playfair">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Mrs. Rosalina Tethool (Owner)<br/>
+                Mobile Phone: +62 823-3745-8131 (Whatsapp)<br/>
+                Whether you’re looking for answers, wish to solve a
+                problem, or just wish to let us know how we did, you’ll find
+                lots of methods to call us right here. We’ll assist you solve
+                your issues rapidly and easily, getting you back to more
+                important things, like unwinding on your brand-new couch.
               </div>
-              <Button variation={"primary-rectangle"} type={"button"}>
+              <Button variation={"primary-rectangle"} type={"button"} onClick={() => navigate("/contact-us")}>
                 Contact Us
               </Button>
             </div>
           </div>
         </div>
       </div>
-
-      {/* COMING SOON..! */}
-      {/* <div className="flex flex-col min-h-screen font-Playfair text-9xl justify-center items-center font-black">
-        <motion.div
-          className="font-Playfair text-9xl font-black text-cust-dark-brown"
-          animate={{ scale: [1, 1.1, 1] }}
-          transition={{ duration: 1.5, repeat: Infinity, ease: easeInOut }}
-        >
-          Coming Soon..!
-        </motion.div>
-      </div> */}
     </MainLayout>
   );
 };
