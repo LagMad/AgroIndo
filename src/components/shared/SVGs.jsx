@@ -1,24 +1,26 @@
 import React from "react";
 
-const Location = ({ fillColor, width, height }) => {
+
+
+const Location = ({ fillColor="white", width="24", height="30" }) => {
   return (
     <svg
-      width={width === "" ? "24" : width}
-      height={height === "" ? "30" : height}
+      width={width}
+      height={height}
       viewBox="0 0 24 30"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
         d="M16.3401 11.8169C16.3401 14.3334 14.3 16.3735 11.7834 16.3735C9.2668 16.3735 7.2267 14.3334 7.2267 11.8169C7.2267 9.30027 9.2668 7.26017 11.7834 7.26017C14.3 7.26017 16.3401 9.30027 16.3401 11.8169Z"
-        stroke={fillColor === "" ? "white" : fillColor}
+        stroke={fillColor}
         strokeWidth="1.82267"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
         d="M22.4157 11.4371C22.4157 19.9809 11.7834 28.5247 11.7834 28.5247C11.7834 28.5247 1.15112 19.9809 1.15112 11.4371C1.15112 5.77481 5.91135 1.18459 11.7834 1.18459C17.6554 1.18459 22.4157 5.77481 22.4157 11.4371Z"
-        stroke={fillColor === "" ? "white" : fillColor}
+        stroke={fillColor}
         strokeWidth="1.82267"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -27,30 +29,31 @@ const Location = ({ fillColor, width, height }) => {
   );
 };
 
-const Email = ({ fillColor, width, height }) => {
+const Email = ({ fillColor = "white", width = "29", height = "23" }) => {
   return (
     <svg
-      width={width === "" ? "29" : width}
-      height={height === "" ? "23" : height}
+      width={width}
+      height={height}
       viewBox="0 0 29 23"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
         d="M2.73352 3.88842L11.8368 10.7158C13.4029 11.8905 15.5564 11.8905 17.1225 10.7158L26.2258 3.88835M4.20179 21.5076H24.7575C26.3793 21.5076 27.694 20.1929 27.694 18.5711V3.88842C27.694 2.26662 26.3793 0.951889 24.7575 0.951889H4.20179C2.57999 0.951889 1.26526 2.26662 1.26526 3.88842V18.5711C1.26526 20.1929 2.57999 21.5076 4.20179 21.5076Z"
-        stroke={fillColor === "" ? "white" : fillColor}
-        stroke-width="1.82267"
-        stroke-linecap="round"
+        stroke={fillColor}
+        strokeWidth="1.82267"
+        strokeLinecap="round"
       />
     </svg>
   );
 };
 
-const WhatsApp = ({ fillColor, width, height }) => {
+
+const WhatsApp = ({ fillColor="#B1C381", width="50", height="49" }) => {
   return (
     <svg
-      width={width === "" ? "50" : width}
-      height={height === "" ? "49" : height}
+      width={width}
+      height={height}
       viewBox="0 0 50 49"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +66,7 @@ const WhatsApp = ({ fillColor, width, height }) => {
       />
       <path
         d="M43.75 24.5C43.75 34.6482 35.3553 42.875 25 42.875C21.0503 42.875 17.3858 41.6782 14.3635 39.6343L7.95455 41.2045L9.634 35.0326C7.50144 32.0501 6.25 28.4183 6.25 24.5C6.25 14.3518 14.6447 6.125 25 6.125C35.3553 6.125 43.75 14.3518 43.75 24.5Z"
-        fill={fillColor === "" ? "#B1C381" : fillColor}
+        fill={fillColor}
       />
       <path
         fill-rule="evenodd"
@@ -79,11 +82,11 @@ const WhatsApp = ({ fillColor, width, height }) => {
   );
 };
 
-const Telegram = ({ fillColor, width, height }) => {
+const Telegram = ({ fillColor="#B1C381", width="50", height="49" }) => {
   return (
     <svg
-      width={width === "" ? "50" : width}
-      height={height === "" ? "49" : height}
+      width={width}
+      height={height}
       viewBox="0 0 50 49"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +96,7 @@ const Telegram = ({ fillColor, width, height }) => {
         cy="24.5"
         rx="21.875"
         ry="21.4375"
-        fill={fillColor === "" ? "#B1C381" : fillColor}
+        fill={fillColor}
       />
       <path
         d="M35.9165 15.6322C36.1113 14.3988 34.9147 13.4253 33.7957 13.9068L11.5075 23.4968C10.705 23.8421 10.7637 25.0333 11.596 25.293L16.1924 26.7275C17.0697 27.0012 18.0196 26.8597 18.7856 26.341L29.1484 19.3248C29.4609 19.1132 29.8015 19.5486 29.5345 19.8184L22.0752 27.3552C21.3516 28.0864 21.4952 29.3252 22.3656 29.8601L30.7171 34.9926C31.6538 35.5682 32.8589 34.9899 33.0341 33.8807L35.9165 15.6322Z"
@@ -103,11 +106,11 @@ const Telegram = ({ fillColor, width, height }) => {
   );
 };
 
-const StarDeco = ({ fillColor, width, height }) => {
+const StarDeco = ({ fillColor="#B1C381", width="192", height="192" }) => {
   return (
     <svg
-      width={width === "" ? "192" : width}
-      height={height === "" ? "192" : height}
+      width={width}
+      height={height}
       viewBox="0 0 191 192"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -122,25 +125,25 @@ const StarDeco = ({ fillColor, width, height }) => {
   );
 };
 
-const Compass = ({ fillColor, width, height }) => {
+const Compass = ({ fillColor="#141C24", width="166", height="166" }) => {
   return (
     <svg
-      width={width === "" ? "166" : width}
-      height={height === "" ? "166" : height}
+      width={width}
+      height={height}
       viewBox="0 0 166 166"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
         d="M110.667 55.3333L69.1667 69.1667L55.3333 110.667L96.8333 96.8333L110.667 55.3333Z"
-        stroke="#141C24"
+        stroke={fillcolor}
         stroke-width="10"
         stroke-linecap="round"
         stroke-linejoin="round"
       />
       <path
         d="M145.25 83C145.25 117.38 117.38 145.25 83 145.25C48.6203 145.25 20.75 117.38 20.75 83C20.75 48.6203 48.6203 20.75 83 20.75C117.38 20.75 145.25 48.6203 145.25 83Z"
-        stroke="#141C24"
+        stroke={fillcolor}
         stroke-width="10"
         stroke-linecap="round"
         stroke-linejoin="round"
@@ -149,11 +152,40 @@ const Compass = ({ fillColor, width, height }) => {
   );
 };
 
-const AgroIndoLogo = ({ fillColor, width, height }) => {
+const Instagram = ({ fillColor="black", width="87", height="84" }) => {
   return (
     <svg
-      width={width === "" ? "2467" : width}
-      height={height === "" ? "2945" : height}
+      width={width}
+      height={height}
+      viewBox="0 0 87 84"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M73.8728 18.757C73.8728 22.2101 70.9858 25.0093 67.4246 25.0093C63.8634 25.0093 60.9765 22.2101 60.9765 18.757C60.9765 15.3039 63.8634 12.5047 67.4246 12.5047C70.9858 12.5047 73.8728 15.3039 73.8728 18.757Z"
+        fill={fillColor}
+      />
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M43.7815 62.5233C55.6522 62.5233 65.2753 53.1925 65.2753 41.6822C65.2753 30.172 55.6522 20.8411 43.7815 20.8411C31.9108 20.8411 22.2877 30.172 22.2877 41.6822C22.2877 53.1925 31.9108 62.5233 43.7815 62.5233ZM43.7815 54.1869C50.9039 54.1869 56.6778 48.5884 56.6778 41.6822C56.6778 34.7761 50.9039 29.1776 43.7815 29.1776C36.6591 29.1776 30.8852 34.7761 30.8852 41.6822C30.8852 48.5884 36.6591 54.1869 43.7815 54.1869Z"
+        fill={fillColor}
+      />
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M0.793945 40.0149C0.793945 26.0084 0.793945 19.0051 3.60516 13.6553C6.07798 8.94953 10.0237 5.12358 14.8769 2.72585C20.3942 0 27.6168 0 42.062 0H45.501C59.9462 0 67.1687 0 72.6861 2.72585C77.5392 5.12358 81.485 8.94953 83.9578 13.6553C86.769 19.0051 86.769 26.0084 86.769 40.0149V43.3495C86.769 57.3561 86.769 64.3593 83.9578 69.7091C81.485 74.4149 77.5392 78.2409 72.6861 80.6386C67.1687 83.3644 59.9462 83.3644 45.501 83.3644H42.062C27.6168 83.3644 20.3942 83.3644 14.8769 80.6386C10.0237 78.2409 6.07798 74.4149 3.60516 69.7091C0.793945 64.3593 0.793945 57.3561 0.793945 43.3495V40.0149ZM42.062 8.33644H45.501C52.8654 8.33644 57.8717 8.34293 61.7414 8.64949C65.5106 8.9481 67.4382 9.48935 68.7829 10.1537C72.0183 11.7522 74.6488 14.3028 76.2974 17.44C76.9825 18.7438 77.5407 20.6129 77.8487 24.2677C78.1648 28.0199 78.1715 32.8741 78.1715 40.0149V43.3495C78.1715 50.4903 78.1648 55.3446 77.8487 59.0967C77.5407 62.7516 76.9825 64.6206 76.2974 65.9244C74.6488 69.0617 72.0183 71.6123 68.7829 73.2108C67.4382 73.8751 65.5106 74.4163 61.7414 74.715C57.8717 75.0215 52.8654 75.028 45.501 75.028H42.062C34.6975 75.028 29.6913 75.0215 25.8216 74.715C22.0523 74.4163 20.1247 73.8751 18.7801 73.2108C15.5446 71.6123 12.9141 69.0617 11.2656 65.9244C10.5805 64.6206 10.0223 62.7516 9.7143 59.0967C9.39814 55.3446 9.39145 50.4903 9.39145 43.3495V40.0149C9.39145 32.8741 9.39814 28.0199 9.7143 24.2677C10.0223 20.6129 10.5805 18.7438 11.2656 17.44C12.9141 14.3028 15.5446 11.7522 18.7801 10.1537C20.1247 9.48935 22.0523 8.9481 25.8216 8.64949C29.6913 8.34293 34.6975 8.33644 42.062 8.33644Z"
+        fill={fillColor}
+      />
+    </svg>
+  );
+};
+
+const AgroIndoLogo = ({ fillColor, width="2467", height="2945" }) => {
+  return (
+    <svg
+      width={width}
+      height={height}
       viewBox="0 0 2467 2945"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -182,11 +214,11 @@ const AgroIndoLogo = ({ fillColor, width, height }) => {
   );
 };
 
-const AgroIndoLogoTEXT = ({ fillColor, width, height }) => {
+const AgroIndoLogoTEXT = ({ fillColor, width="1370", height="420" }) => {
   return (
     <svg
-      width={width === "" ? "1370" : width}
-      height={height === "" ? "420" : height}
+      width={width}
+      height={height}
       viewBox="0 0 1370 420"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -220,6 +252,7 @@ export default {
   Telegram,
   StarDeco,
   Compass,
+  Instagram,
   AgroIndoLogo,
   AgroIndoLogoTEXT,
 };

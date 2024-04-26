@@ -21,7 +21,9 @@ export default {
         'cust-dark-cream' : '#FFF7D4',
         'cust-light-cream' : '#F8FAE5',
 
-        'cust-yellow' : '#EEC759'
+        'cust-yellow' : '#EEC759',
+
+        'cust-grey' : '#D9D9D9'
       },
       backgroundImage: {
         'Hero1' : "url('/src/assets/Hero1.png')",

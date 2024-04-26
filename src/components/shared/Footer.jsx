@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="flex flex-col justify-start items-start w-1/2 gap-3">
           <div className="flex font-bold font-Playfair text-3xl">AgroIndo</div>
           <div className="flex flex-row font-Montserrat text-lg items-center gap-4">
-            <SVGs.Location width={"24"} height={"30"} fillColor={""} />
+            <SVGs.Location width={"24"} height={""} fillColor="#F8FAE5"/>
             <div className="text-[14px]">
               Denmoza Hill 1, Ulesari, Tirtomoyo, Pakis Subdistrict, <br />{" "}
               Malang Regency, East Java, Indonesia 65154
@@ -23,8 +23,8 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex flex-row items-center gap-3">
-            <SVGs.WhatsApp width={""} fillColor={""} />
-            <SVGs.Telegram width={""} fillColor={""} />
+            <SVGs.WhatsApp />
+            <SVGs.Telegram />
           </div>
         </div>
         <div className="flex flex-col justify-start items-center w-1/2">
@@ -35,7 +35,7 @@ const Footer = () => {
             <img className="w-72" src={CartrackLogo} alt="cartrack logo" />
           </div>
         </div>
-        <div className="absolute -top-20 right-36">
+        <div className="absolute -top-24 right-36">
           <SVGs.StarDeco width={"150"} />
         </div>
       </div>
