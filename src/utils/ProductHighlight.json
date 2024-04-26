@@ -13,10 +13,5 @@
         "image": "/src/assets/GiantGingerPowder.jpg",
         "name": "Giant Ginger Powder (Zingiber Officinale Rosc.)",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-    },
-    {
-        "image": "/src/assets/CurcumaPowder.jpg",
-        "name": "Curcuma Powder (Curcuma Zanthorrhiza)",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
     }
 ]

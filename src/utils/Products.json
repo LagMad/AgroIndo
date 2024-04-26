@@ -5,13 +5,13 @@
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
     },
     {
-        "image": "/src/assets/Konjac.png",
-        "name": "KONJAC",
+        "image": "/src/assets/TurmericPowder.jpg",
+        "name": "TURMERIC",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
     },
     {
-        "image": "/src/assets/Konjac.png",
-        "name": "KONJAC",
+        "image": "/src/assets/GiantGingerPowder.jpg",
+        "name": "GIANTGINGER",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
     },
     {

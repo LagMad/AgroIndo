@@ -72,7 +72,7 @@ const Home = () => {
                   </p>
                   <div className="absolute-wrapper flex flex-row top-[40%] left-16 z-0">
                     <div
-                      className={`carousel-item bg-Konjac w-72 h-72 rounded-2xl bg-no-repeat overflow-hidden bg-center bg-cover ${
+                      className={`carousel-item bg-ProductKONJAC w-72 h-72 rounded-2xl bg-no-repeat overflow-hidden bg-center bg-cover ${
                         currentIndexCard === 0
                           ? "z-20"
                           : currentIndexCard === 1
@@ -90,7 +90,7 @@ const Home = () => {
                       }}
                     />
                     <div
-                      className={`carousel-item bg-Kunyit w-72 h-72 rounded-2xl bg-no-repeat overflow-hidden bg-center bg-cover ${
+                      className={`carousel-item bg-ProductTURMERIC w-72 h-72 rounded-2xl bg-no-repeat overflow-hidden bg-center bg-cover ${
                         currentIndexCard === 1
                           ? "z-20"
                           : currentIndexCard === 2
@@ -108,7 +108,7 @@ const Home = () => {
                       }}
                     />
                     <div
-                      className={`carousel-item bg-Jahe w-72 h-72 rounded-2xl bg-no-repeat overflow-hidden bg-center bg-cover ${
+                      className={`carousel-item bg-ProductGIANTGINGER w-72 h-72 rounded-2xl bg-no-repeat overflow-hidden bg-center bg-cover ${
                         currentIndexCard === 2
                           ? "z-20"
                           : currentIndexCard === 0
