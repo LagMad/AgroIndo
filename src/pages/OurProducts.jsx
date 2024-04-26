@@ -110,6 +110,7 @@ const OurProducts = () => {
               <BestProductCard
                 key={index}
                 image={card.image}
+                imageName={card.imageName}
                 name={card.name}
               />
             ))}
