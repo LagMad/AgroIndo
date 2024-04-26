@@ -1,8 +1,6 @@
 import React from "react";
 
-
-
-const Location = ({ fillColor="white", width="24", height="30" }) => {
+const Location = ({ fillColor = "white", width = "24", height = "30" }) => {
   return (
     <svg
       width={width}
@@ -48,8 +46,7 @@ const Email = ({ fillColor = "white", width = "29", height = "23" }) => {
   );
 };
 
-
-const WhatsApp = ({ fillColor="#B1C381", width="50", height="49" }) => {
+const WhatsApp = ({ fillColor = "#B1C381", width = "50", height = "49" }) => {
   return (
     <svg
       width={width}
@@ -82,7 +79,7 @@ const WhatsApp = ({ fillColor="#B1C381", width="50", height="49" }) => {
   );
 };
 
-const Telegram = ({ fillColor="#B1C381", width="50", height="49" }) => {
+const Telegram = ({ fillColor = "#B1C381", width = "50", height = "49" }) => {
   return (
     <svg
       width={width}
@@ -91,13 +88,7 @@ const Telegram = ({ fillColor="#B1C381", width="50", height="49" }) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <ellipse
-        cx="25"
-        cy="24.5"
-        rx="21.875"
-        ry="21.4375"
-        fill={fillColor}
-      />
+      <ellipse cx="25" cy="24.5" rx="21.875" ry="21.4375" fill={fillColor} />
       <path
         d="M35.9165 15.6322C36.1113 14.3988 34.9147 13.4253 33.7957 13.9068L11.5075 23.4968C10.705 23.8421 10.7637 25.0333 11.596 25.293L16.1924 26.7275C17.0697 27.0012 18.0196 26.8597 18.7856 26.341L29.1484 19.3248C29.4609 19.1132 29.8015 19.5486 29.5345 19.8184L22.0752 27.3552C21.3516 28.0864 21.4952 29.3252 22.3656 29.8601L30.7171 34.9926C31.6538 35.5682 32.8589 34.9899 33.0341 33.8807L35.9165 15.6322Z"
         fill="white"
@@ -106,7 +97,7 @@ const Telegram = ({ fillColor="#B1C381", width="50", height="49" }) => {
   );
 };
 
-const StarDeco = ({ fillColor="#B1C381", width="192", height="192" }) => {
+const StarDeco = ({ fillColor = "#B1C381", width = "192", height = "192" }) => {
   return (
     <svg
       width={width}
@@ -125,7 +116,7 @@ const StarDeco = ({ fillColor="#B1C381", width="192", height="192" }) => {
   );
 };
 
-const Compass = ({ fillColor="#141C24", width="166", height="166" }) => {
+const Compass = ({ fillColor = "#141C24", width = "166", height = "166" }) => {
   return (
     <svg
       width={width}
@@ -152,7 +143,7 @@ const Compass = ({ fillColor="#141C24", width="166", height="166" }) => {
   );
 };
 
-const Instagram = ({ fillColor="black", width="87", height="84" }) => {
+const Instagram = ({ fillColor = "black", width = "87", height = "84" }) => {
   return (
     <svg
       width={width}
@@ -181,7 +172,7 @@ const Instagram = ({ fillColor="black", width="87", height="84" }) => {
   );
 };
 
-const AgroIndoLogo = ({ fillColor, width="2467", height="2945" }) => {
+const AgroIndoLogo = ({ fillColor, width = "2467", height = "2945" }) => {
   return (
     <svg
       width={width}
@@ -214,7 +205,7 @@ const AgroIndoLogo = ({ fillColor, width="2467", height="2945" }) => {
   );
 };
 
-const AgroIndoLogoTEXT = ({ fillColor, width="1370", height="420" }) => {
+const AgroIndoLogoTEXT = ({ fillColor, width = "1370", height = "420" }) => {
   return (
     <svg
       width={width}
@@ -245,6 +236,54 @@ const AgroIndoLogoTEXT = ({ fillColor, width="1370", height="420" }) => {
   );
 };
 
+const RightArrowCircle = ({
+  fillColor = "#43766C",
+  width = "50",
+  height = "50"
+}) => {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 36 37"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        x="36"
+        y="36.501"
+        width="36"
+        height="36.5009"
+        rx="18"
+        transform="rotate(180 36 36.501)"
+        fill={fillColor}
+      />
+      <path
+        d="M12.75 19H21.645L18.9225 22.27C18.7952 22.4232 18.7339 22.6207 18.7522 22.819C18.7705 23.0173 18.8668 23.2002 19.02 23.3275C19.1732 23.4548 19.3706 23.5161 19.5689 23.4978C19.7673 23.4795 19.9502 23.3832 20.0775 23.23L23.8275 18.73C23.8527 18.6942 23.8753 18.6566 23.895 18.6175C23.895 18.58 23.895 18.5575 23.9475 18.52C23.9815 18.434 23.9993 18.3425 24 18.25C23.9993 18.1576 23.9815 18.066 23.9475 17.98C23.9475 17.9425 23.9475 17.92 23.895 17.8825C23.8753 17.8434 23.8527 17.8058 23.8275 17.77L20.0775 13.27C20.007 13.1854 19.9187 13.1173 19.8189 13.0706C19.7191 13.024 19.6102 12.9999 19.5 13C19.3248 12.9997 19.1549 13.0607 19.02 13.1725C18.9441 13.2355 18.8813 13.3128 18.8353 13.4001C18.7893 13.4873 18.7609 13.5828 18.7518 13.6811C18.7428 13.7793 18.7532 13.8783 18.7825 13.9725C18.8118 14.0668 18.8593 14.1542 18.9225 14.23L21.645 17.5H12.75C12.5511 17.5 12.3603 17.5791 12.2197 17.7197C12.079 17.8604 12 18.0511 12 18.25C12 18.4489 12.079 18.6397 12.2197 18.7804C12.3603 18.921 12.5511 19 12.75 19Z"
+        fill="white"
+      />
+    </svg>
+  );
+};
+
+const LeftArrowCircle = ({ fillColor="#43766C", width="50", height="50" }) => {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 36 37"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect width="36" height="36.5009" rx="18" fill={fillColor} />
+      <path
+        d="M23.25 17.5009H14.355L17.0775 14.2309C17.2048 14.0778 17.2661 13.8803 17.2478 13.682C17.2295 13.4837 17.1332 13.3007 16.98 13.1734C16.8268 13.0461 16.6294 12.9849 16.4311 13.0032C16.2327 13.0215 16.0498 13.1178 15.9225 13.2709L12.1725 17.7709C12.1473 17.8067 12.1247 17.8443 12.105 17.8834C12.105 17.9209 12.105 17.9434 12.0525 17.9809C12.0185 18.0669 12.0007 18.1585 12 18.2509C12.0007 18.3434 12.0185 18.4349 12.0525 18.5209C12.0525 18.5584 12.0525 18.5809 12.105 18.6184C12.1247 18.6575 12.1473 18.6951 12.1725 18.7309L15.9225 23.2309C15.993 23.3156 16.0813 23.3837 16.1811 23.4304C16.2809 23.477 16.3898 23.5011 16.5 23.5009C16.6752 23.5013 16.8451 23.4403 16.98 23.3284C17.0559 23.2655 17.1187 23.1882 17.1647 23.1009C17.2107 23.0136 17.2391 22.9182 17.2482 22.8199C17.2572 22.7217 17.2468 22.6226 17.2175 22.5284C17.1882 22.4342 17.1407 22.3467 17.0775 22.2709L14.355 19.0009H23.25C23.4489 19.0009 23.6397 18.9219 23.7803 18.7813C23.921 18.6406 24 18.4499 24 18.2509C24 18.052 23.921 17.8613 23.7803 17.7206C23.6397 17.58 23.4489 17.5009 23.25 17.5009Z"
+        fill="white"
+      />
+    </svg>
+  );
+};
+
 export default {
   Location,
   Email,
@@ -255,4 +294,6 @@ export default {
   Instagram,
   AgroIndoLogo,
   AgroIndoLogoTEXT,
+  RightArrowCircle,
+  LeftArrowCircle,
 };

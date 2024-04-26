@@ -4,6 +4,8 @@ import { easeInOut, motion } from "framer-motion";
 import MainLayout from "../components/layout/MainLayout";
 import Button from "../components/ui/Button";
 import ContactPlant from "../assets/ContactPlant.png";
+import ProductHighlight from "../utils/ProductHighlight.json";
+import SVGs from "../components/shared/SVGs";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -53,7 +55,7 @@ const Home = () => {
 
           {/* EXPLORE OUR PRODUCTS */}
           <div className="flex flex-col w-full justify-center items-center gap-10 overflow-hidden">
-            <div className="flex flex-col w-full px-40 text-cust-dark-brown justify-center items-end gap-3">
+            {/* <div className="flex flex-col w-full px-40 text-cust-dark-brown justify-center items-end gap-3">
               <div className="text-4xl font-black font-Playfair">
                 Explore Our Products
               </div>
@@ -61,39 +63,78 @@ const Home = () => {
                 Explore our diverse range of premium powdered products from
                 Indonesia's rich agricultural produce
               </div>
-            </div>
-            <div
-              className="flex flex-row max-w-full gap-16 justify-center items-center transition-all duration-500 transform ease-in-out"
-              style={{
-                transform: `translateX(${
-                  currentIndexCard === 0
-                    ? "34%"
-                    : currentIndexCard === 1
-                    ? "0%"
-                    : "-34%"
-                })`,
-              }}
-            >
-              <div className="flex relative bg-Konjac bg-no-repeat bg-cover w-[350px] h-[350px] justify-end items-end rounded-[40px] overflow-hidden z-0">
-                <div className="absolute w-full h-full bg-gradient-to-t from-black from-10% to-transparent to-40% z-10 opacity-30" />
-                <p className="pr-7 pb-7 z-20 text-cust-light-cream text-right font-Playfair font-bold text-xl">
-                  Konjac Powder <br />
-                  (Armophophallus Muelleri)
-                </p>
+            </div> */}
+            <div className="flex flex-row w-full justify-center items-center">
+              <div className="flex w-1/2 justify-center items-center">
+                <div className="flex relative bg-cust-darker-green w-[calc(100%-180px)] h-96 mr-48 rounded-r-[44px] mb-40">
+                  <p className="text-3xl font-bold text-white pt-7 pl-5">
+                    Explore Our Products!
+                  </p>
+                  <div className="absolute-wrapper flex flex-row top-[40%] left-16 z-0">
+                    <div
+                      className={`carousel-item bg-Konjac w-72 h-72 rounded-2xl bg-no-repeat overflow-hidden bg-center bg-cover ${
+                        currentIndexCard === 0
+                          ? "z-20"
+                          : currentIndexCard === 1
+                          ? "z-10"
+                          : "z-0"
+                      }`}
+                      style={{
+                        transform: `translateX(${
+                          currentIndexCard === 0
+                            ? "70%"
+                            : currentIndexCard === 1
+                            ? "-5%"
+                            : "145%"
+                        }) scale(${currentIndexCard === 0 ? 1.5 : 1})`,
+                      }}
+                    />
+                    <div
+                      className={`carousel-item bg-Kunyit w-72 h-72 rounded-2xl bg-no-repeat overflow-hidden bg-center bg-cover ${
+                        currentIndexCard === 1
+                          ? "z-20"
+                          : currentIndexCard === 2
+                          ? "z-10"
+                          : "z-0"
+                      }`}
+                      style={{
+                        transform: `translateX(${
+                          currentIndexCard === 1
+                            ? "-30%"
+                            : currentIndexCard === 2
+                            ? "-105%"
+                            : "45%"
+                        }) scale(${currentIndexCard === 1 ? 1.5 : 1})`,
+                      }}
+                    />
+                    <div
+                      className={`carousel-item bg-Jahe w-72 h-72 rounded-2xl bg-no-repeat overflow-hidden bg-center bg-cover ${
+                        currentIndexCard === 2
+                          ? "z-20"
+                          : currentIndexCard === 0
+                          ? "z-10"
+                          : "z-0"
+                      }`}
+                      style={{
+                        transform: `translateX(${
+                          currentIndexCard === 2
+                            ? "-130%"
+                            : currentIndexCard === 0
+                            ? "-205%"
+                            : "-55%"
+                        }) scale(${currentIndexCard === 2 ? 1.5 : 1})`,
+                      }}
+                    />
+                  </div>
+                </div>
               </div>
-              <div className="flex relative bg-Kunyit bg-no-repeat bg-cover bg-center w-[350px] h-[350px] justify-end items-end rounded-[40px] overflow-hidden z-0">
-                <div className="absolute w-full h-full bg-gradient-to-t from-black from-10% to-transparent to-40% z-10 opacity-30" />
-                <p className="pr-7 pb-7 z-20 text-cust-light-cream text-right font-Playfair font-bold text-xl">
-                  Turmeric Powder <br />
-                  (Curcuma Longa)
-                </p>
-              </div>
-              <div className="flex relative bg-Jahe bg-no-repeat bg-cover bg-center w-[350px] h-[350px] justify-end items-end rounded-[40px] overflow-hidden z-0">
-                <div className="absolute w-full h-full bg-gradient-to-t from-black from-10% to-transparent to-40% z-10 opacity-30" />
-                <p className="pr-7 pb-7 z-20 text-cust-light-cream text-right font-Playfair font-bold text-xl">
-                  Ginger Powder <br />
-                  (Zingiber Officinale Rosc.)
-                </p>
+              <div className="flex flex-col w-1/2 justify-center items-start gap-10 pl-32 pr-64 transform transition-all duration-500 ease-in-out">
+                <div className="font-bold text-cust-orange-normal text-3xl">
+                  {ProductHighlight[currentIndexCard].name}
+                </div>
+                <div className="flex flex-col gap-5">
+                  {ProductHighlight[currentIndexCard].description}
+                </div>
               </div>
             </div>
             <div className="flex flex-row w-full justify-between items-center">
@@ -132,20 +173,12 @@ const Home = () => {
                 </Button>
               </div>
               <div className="flex flex-row w-1/3 justify-center items-center gap-4">
-                <Button
-                  variation={"primary-round"}
-                  type={"button"}
-                  onClick={goToPreviousCards}
-                >
-                  {"<"}
-                </Button>
-                <Button
-                  variation={"primary-round"}
-                  type={"button"}
-                  onClick={goToNextCards}
-                >
-                  {">"}
-                </Button>
+                <button onClick={goToPreviousCards}>
+                  <SVGs.LeftArrowCircle width={"50"} height={""} />
+                </button>
+                <button onClick={goToNextCards}>
+                  <SVGs.RightArrowCircle width={"50"} height={""} />
+                </button>
               </div>
             </div>
           </div>

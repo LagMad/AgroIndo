@@ -1,0 +1,22 @@
+[
+    {
+        "image": "/src/assets/Konjac.png",
+        "name": "Konjac Powder (Amorphophallus Muelleri)",
+        "description": "Konjac Powder Description"
+    },
+    {
+        "image": "/src/assets/TurmericPowder.jpg",
+        "name": "Turmeric Powder (Curcuma Longa)",
+        "description": "Turmeric Powder Description"
+    },
+    {
+        "image": "/src/assets/GiantGingerPowder.jpg",
+        "name": "Giant Ginger Powder (Zingiber Officinale Rosc.)",
+        "description": "Giant Ginger Powder Description"
+    },
+    {
+        "image": "/src/assets/CurcumaPowder.jpg",
+        "name": "Curcuma Powder (Curcuma Zanthorrhiza)",
+        "description": "Curcuma Powder Description"
+    }
+]
