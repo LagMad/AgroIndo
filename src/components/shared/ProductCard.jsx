@@ -8,7 +8,7 @@ const ProductCard = ({ image, name, description, isScaled }) => {
         isScaled ? "scale-110" : ""
       } transition-all duration-500 transform ease-in-out`}
     >
-      <div className={`flex w-60 h-64 bg-Product${name} bg-no-repeat bg-cover bg-center rounded-[24px]`}/>
+      <div className={`flex w-60 h-64 bg-Konjac bg-Product${name} bg-no-repeat bg-cover bg-center rounded-[24px]`}/>
       <div className="flex flex-col justify-center items-center gap-2">
         <div className="text-3xl font-bold">{name}</div>
         <div className="text-[16px] text-center">{description}</div>
