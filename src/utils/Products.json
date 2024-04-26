@@ -15,23 +15,23 @@
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
     },
     {
-        "image": "/src/assets/Konjac.png",
-        "name": "KONJAC",
+        "image": "/src/assets/DurianCoffee.jpg",
+        "name": "DURIANCOFFEE",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+    },
+    {
+        "image": "/src/assets/BananaFlour.jpg",
+        "name": "BANANAFLOUR",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
     },
     {
         "image": "/src/assets/Konjac.png",
-        "name": "KONJAC",
+        "name": "KONJACPOWDER",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
     },
     {
-        "image": "/src/assets/Konjac.png",
-        "name": "KONJAC",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-    },
-    {
-        "image": "/src/assets/Konjac.png",
-        "name": "KONJAC",
+        "image": "/src/assets/BananaLeaf.jpg",
+        "name": "BANANALEAF",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
     }
 ]
