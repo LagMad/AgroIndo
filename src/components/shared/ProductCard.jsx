@@ -2,7 +2,6 @@
 import React from "react";
 
 const ProductCard = ({ image, name, description, isScaled, className }) => {
-  console.log(className);
 
   return (
     <div
