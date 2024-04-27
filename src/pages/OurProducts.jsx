@@ -54,6 +54,7 @@ const OurProducts = () => {
             {ProductsDataDummy.map((card, index) => (
               <ProductCard
                 key={index}
+                className={`bg-Product${card.name}`}
                 image={card.image}
                 name={card.name}
                 description={card.description}

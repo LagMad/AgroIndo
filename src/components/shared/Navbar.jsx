@@ -3,7 +3,6 @@ import { useNavigate, useLocation } from "react-router-dom";
 
 // COMPONENT
 import Button from "../ui/Button";
-import AgroIndoLogo from "../../assets/AgroIndoLogoTEXT.png"
 import SVGs from "./SVGs";
 
 const Navbar = () => {
