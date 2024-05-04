@@ -4,7 +4,7 @@ import CartrackLogo from "../../assets/CartractLogo.png";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col w-full h-auto font-Montserrat justify-center items-center px-20 bg-cust-darker-green text-cust-light-cream rounded-t-[56px]">
+    <div className="flex flex-col w-full h-auto font-Montserrat justify-center items-center px-20 bg-cust-darker-green text-cust-light-cream rounded-t-[56px] drop-shadow-2xl">
       <div className="flex flex-row relative w-full pt-24">
         <div className="flex flex-col justify-start items-start w-1/2 gap-3">
           <div className="flex font-bold font-Playfair text-3xl">AgroIndo</div>

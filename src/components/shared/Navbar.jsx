@@ -33,7 +33,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 z-50 w-full h-20 flex justify-between items-center px-20 font-Playfair font-semibold text-cust-light-cream rounded-b-[56px] ${
+      className={`fixed top-0 z-50 w-full h-20 flex justify-between items-center px-20 font-Playfair font-semibold text-cust-light-cream rounded-b-[56px] drop-shadow-2xl ${
         isScrolled ? "bg-cust-darker-green" : "bg-transparent"
       } transition-all duration-500 ease-in-out`}
     >

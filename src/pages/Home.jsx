@@ -71,7 +71,7 @@ const Home = () => {
                   <p className="text-3xl font-bold text-white pt-7">
                     Explore Our Products!
                   </p>
-                  <div className="absolute-wrapper w-[900px] flex flex-row top-[170px] left-[80px] z-0">
+                  <div className="absolute-wrapper w-[900px] flex flex-row top-[170px] z-0 justify-center items-center -ml-10">
                     <img
                       className={`carousel-item w-[250px] h-[250px] rounded-2xl bg-no-repeat overflow-hidden object-center object-cover ${
                         currentIndexCard === 0
@@ -131,7 +131,7 @@ const Home = () => {
                     />
                   </div>
                 </div>
-                <div className="flex flex-row justify-center items-center gap-4 px-20">
+                <div className="flex flex-row justify-center items-center gap-4">
                   <hr
                     className={`${
                       currentIndexCard === 0
