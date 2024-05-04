@@ -67,11 +67,11 @@ const Home = () => {
             </div> */}
             <div className="flex flex-row w-full justify-center items-center">
               <div className="flex flex-col w-1/2 justify-center items-center">
-                <div className="flex relative bg-cust-darker-green w-[calc(100%-180px)] h-96 mr-48 rounded-r-[44px] mb-44 px-20">
-                  <p className="text-3xl font-bold text-white pt-7 pl-5">
+                <div className="flex relative bg-cust-darker-green w-[calc(100%-180px)] h-96 mr-48 rounded-r-[44px] mb-32 px-20">
+                  <p className="text-3xl font-bold text-white pt-7">
                     Explore Our Products!
                   </p>
-                  <div className="absolute-wrapper w-[900px] flex flex-row top-[170px] left-[120px] z-0">
+                  <div className="absolute-wrapper w-[900px] flex flex-row top-[170px] left-[80px] z-0">
                     <img
                       className={`carousel-item w-[250px] h-[250px] rounded-2xl bg-no-repeat overflow-hidden object-center object-cover ${
                         currentIndexCard === 0
@@ -131,7 +131,7 @@ const Home = () => {
                     />
                   </div>
                 </div>
-                <div className="flex flex-row justify-center items-center gap-4">
+                <div className="flex flex-row justify-center items-center gap-4 px-20">
                   <hr
                     className={`${
                       currentIndexCard === 0
