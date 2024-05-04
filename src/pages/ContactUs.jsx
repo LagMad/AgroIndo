@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import MainLayout from "../components/layout/MainLayout";
 import ContactCard from "../components/shared/ContactCard";
 import SVGs from "../components/shared/SVGs";
@@ -7,6 +7,30 @@ import Maps from "../assets/Maps.png";
 import Button from "../components/ui/Button";
 
 const ContactUs = () => {
+  const [isEmailHovered, setEmailHovered] = useState(false);
+  const [isTelegramHovered, setTelegramHovered] = useState(false);
+  const [isInstagramHovered, setInstagramHovered] = useState(false);
+  const [isWhatsAppHovered, setWhatsAppHovered] = useState(false);
+
+  const handleHover = (socialMedia, hoverStatus) => {
+    switch (socialMedia) {
+      case "email":
+        setEmailHovered(hoverStatus);
+        break;
+      case "instagram":
+        setInstagramHovered(hoverStatus);
+        break;
+      case "telegram":
+        setTelegramHovered(hoverStatus);
+        break;
+      case "whatsapp":
+        setWhatsAppHovered(hoverStatus);
+        break;
+      default:
+        break;
+    }
+  };
+
   return (
     <MainLayout>
       <div className="flex flex-col w-full min-h-screen justify-center items-center gap-10 pt-10 pb-24">
@@ -54,34 +78,96 @@ const ContactUs = () => {
           </div>
         </div>
         <div className="flex flex-row w-full justify-between px-20">
-          <ContactCard
-            icon={<SVGs.Email width="120" height="" fillColor="black"/>}
-            description={<>agroindomlg@gmail.com</>}
-          />
-          <ContactCard
-            icon={<SVGs.Telegram width={"120"} height="" fillColor={"black"} />}
-            description={
-              <>
-                Telegram
-                <br />
-                (+62) 823-3745-8131
-              </>
-            }
-          />
-          <ContactCard
-            icon={<SVGs.Instagram width={"120"} height="" fillColor={"black"} />}
-            description={<>@agroindo.id</>}
-          />
-          <ContactCard
-            icon={<SVGs.WhatsApp width={"120"} height="" fillColor={"black"} />}
-            description={
-              <>
-                WhatsApp
-                <br />
-                (+62) 823-3745-8131
-              </>
-            }
-          />
+          <button
+            className={`flex flex-col w-[300px] h-[320px] gap-7 rounded-2xl justify-center items-center py-10 px-16 ${
+              isEmailHovered ? "bg-cust-light-green" : "bg-white"
+            }`}
+            onMouseEnter={() => handleHover("email", true)}
+            onMouseLeave={() => handleHover("email", false)}
+          >
+            <div className="">
+              <SVGs.Email
+                width="120"
+                height=""
+                fillColor={isEmailHovered ? "white" : "black"}
+              />
+            </div>
+            <div
+              className={`font-medium font-Montserrat text-[14px] text-center ${
+                isEmailHovered ? "text-white" : "text-black"
+              }`}
+            >
+              agroindomlg@gmail.com
+            </div>
+          </button>
+          <button
+            className={`flex flex-col w-[300px] h-[320px] gap-7 rounded-2xl justify-center items-center py-10 px-16 ${
+              isTelegramHovered ? "bg-cust-light-green" : "bg-white"
+            }`}
+            onMouseEnter={() => handleHover("telegram", true)}
+            onMouseLeave={() => handleHover("telegram", false)}
+          >
+            <div className="">
+              <SVGs.Telegram
+                width="120"
+                height=""
+                fillColor={isTelegramHovered ? "white" : "black"}
+              />
+            </div>
+            <div
+              className={`font-medium font-Montserrat text-[14px] text-center ${
+                isTelegramHovered ? "text-white" : "text-black"
+              }`}
+            >
+              Telegram
+              <br />
+              (+62) 823-3745-8131
+            </div>
+          </button>
+          <button
+            className={`flex flex-col w-[300px] h-[320px] gap-7 rounded-2xl justify-center items-center py-10 px-16 ${
+              isInstagramHovered ? "bg-cust-light-green" : "bg-white"
+            }`}
+            onMouseEnter={() => handleHover("instagram", true)}
+            onMouseLeave={() => handleHover("instagram", false)}
+          >
+            <div className="">
+              <SVGs.Instagram
+                width="120"
+                height=""
+                fillColor={isInstagramHovered ? "white" : "black"}
+              />
+            </div>
+            <div
+              className={`font-medium font-Montserrat text-[14px] text-center ${
+                isInstagramHovered ? "text-white" : "text-black"
+              }`}
+            >
+              @agroindo.id
+            </div>
+          </button>
+          <button
+            className={`flex flex-col w-[300px] h-[320px] gap-7 rounded-2xl justify-center items-center py-10 px-16 ${
+              isWhatsAppHovered ? "bg-cust-light-green" : "bg-white"
+            }`}
+            onMouseEnter={() => handleHover("whatsapp", true)}
+            onMouseLeave={() => handleHover("whatsapp", false)}
+          >
+            <div className="">
+              <SVGs.WhatsApp
+                width="120"
+                height=""
+                fillColor={isWhatsAppHovered ? "#B1C381" : "black"}
+              />
+            </div>
+            <div
+              className={`font-medium font-Montserrat text-[14px] text-center ${
+                isWhatsAppHovered ? "text-white" : "text-black"
+              }`}
+            >
+              @agroindo.id
+            </div>
+          </button>
         </div>
 
         {/* MAPS */}
