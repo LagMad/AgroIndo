@@ -65,7 +65,7 @@ const Home = () => {
               </div>
             </div> */}
             <div className="flex flex-row w-full justify-center items-center">
-              <div className="flex w-1/2 justify-center items-center">
+              <div className="flex flex-col w-1/2 justify-center items-center">
                 <div className="flex relative bg-cust-darker-green w-[calc(100%-180px)] h-96 mr-48 rounded-r-[44px] mb-40">
                   <p className="text-3xl font-bold text-white pt-7 pl-5">
                     Explore Our Products!
@@ -127,18 +127,6 @@ const Home = () => {
                     />
                   </div>
                 </div>
-              </div>
-              <div className="flex flex-col w-1/2 justify-center items-start gap-10 pl-32 pr-64 transform transition-all duration-500 ease-in-out">
-                <div className="font-bold text-cust-orange-normal text-3xl">
-                  {ProductHighlight[currentIndexCard].name}
-                </div>
-                <div className="flex flex-col gap-5">
-                  {ProductHighlight[currentIndexCard].description}
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-row w-full justify-between items-center">
-              <div className="flex flex-row w-1/3 justify-center items-center">
                 <div className="flex flex-row justify-center items-center gap-4">
                   <hr
                     className={`${
@@ -163,22 +151,32 @@ const Home = () => {
                   />
                 </div>
               </div>
-              <div className="flex flex-row w-1/3 justify-center items-center">
-                <Button
-                  variation={"secondary-rectangle"}
-                  type={"button"}
-                  onClick={() => navigate("/our-products")}
-                >
-                  See More
-                </Button>
-              </div>
-              <div className="flex flex-row w-1/3 justify-center items-center gap-4">
-                <button onClick={goToPreviousCards}>
-                  <SVGs.LeftArrowCircle width={"50"} height={""} />
-                </button>
-                <button onClick={goToNextCards}>
-                  <SVGs.RightArrowCircle width={"50"} height={""} />
-                </button>
+              <div className="flex flex-col w-1/2 justify-center items-start gap-10 pl-32 pr-64 transform transition-all duration-500 ease-in-out">
+                <div className="font-bold text-cust-orange-normal text-3xl">
+                  {ProductHighlight[currentIndexCard].name}
+                </div>
+                <div className="flex flex-col gap-5">
+                  {ProductHighlight[currentIndexCard].description}
+                </div>
+                <div className="flex flex-row w-full justify-between">
+                  <div className="flex flex-row w-full justify-start items-center">
+                    <Button
+                      variation={"secondary-rectangle"}
+                      type={"button"}
+                      onClick={() => navigate("/our-products")}
+                    >
+                      See More
+                    </Button>
+                  </div>
+                  <div className="flex flex-row w-full justify-end items-center gap-4">
+                    <button onClick={goToPreviousCards}>
+                      <SVGs.LeftArrowCircle width={"50"} height={""} />
+                    </button>
+                    <button onClick={goToNextCards}>
+                      <SVGs.RightArrowCircle width={"50"} height={""} />
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

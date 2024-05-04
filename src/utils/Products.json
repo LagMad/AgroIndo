@@ -1,37 +1,37 @@
 [
     {
-        "image": "/src/assets/Konjac.png",
+        "image": "/public/images/Konjac.png",
         "name": "KONJAC",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
     },
     {
-        "image": "/src/assets/TurmericPowder.jpg",
+        "image": "/public/images/TurmericPowder.jpg",
         "name": "TURMERIC",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
     },
     {
-        "image": "/src/assets/GiantGingerPowder.jpg",
-        "name": "GIANTGINGER",
+        "image": "/public/images/GiantGingerPowder.jpg",
+        "name": "GIANT GINGER",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
     },
     {
-        "image": "/src/assets/DurianCoffee.jpg",
-        "name": "DURIANCOFFEE",
+        "image": "/public/images/DurianCoffee.jpg",
+        "name": "DURIAN COFFEE",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
     },
     {
-        "image": "/src/assets/BananaFlour.jpg",
-        "name": "BANANAFLOUR",
+        "image": "/public/images/BananaFlour.jpg",
+        "name": "BANANA FLOUR",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
     },
     {
-        "image": "/src/assets/Konjac.png",
-        "name": "KONJACPOWDER",
+        "image": "/public/images/Konjac.png",
+        "name": "KONJAC POWDER",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
     },
     {
-        "image": "/src/assets/BananaLeaf.jpg",
-        "name": "BANANALEAF",
+        "image": "/public/images/BananaLeaf.jpg",
+        "name": "BANANA LEAF",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
     }
 ]

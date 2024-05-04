@@ -49,6 +49,7 @@ export default {
         // Konjac: "url('/src/assets/Konjac.png')",
         // Kunyit: "url('/src/assets/Kunyit.jpg')",
         // Jahe: "url('/src/assets/Jahe.jpg')",
+        DURIANCOFFEE: "url('/src/assets/DurianCoffee.jpg')"
       },
     },
   },

@@ -17,7 +17,7 @@ const ProductCard = ({ image, name, description, isScaled, className }) => {
         />
       </div>
 
-      <div className="flex flex-col justify-center items-center gap-2">
+      <div className="flex flex-col justify-center items-center gap-2 text-center">
         <div className="text-3xl font-bold">{name}</div>
         <div className="text-[16px] text-center">{description}</div>
       </div>
