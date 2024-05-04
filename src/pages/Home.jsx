@@ -7,6 +7,8 @@ import ContactPlant from "../assets/ContactPlant.png";
 import ProductHighlight from "../utils/ProductHighlight.json";
 import SVGs from "../components/shared/SVGs";
 import KonjacPowder from "../assets/Konjac.png"
+import TurmericPowder from "../assets/TurmericPowder.jpg";
+import GiantGingerPowder from  "./src/assets/GiantGingerPowder.jpg"
 
 const Home = () => {
   const navigate = useNavigate();
@@ -80,7 +82,7 @@ const Home = () => {
                           ? "z-10"
                           : "z-0"
                       }`}
-                      src="../src/assets/Konjac.png"
+                      src={KonjacPowder}
                       style={{
                         transform: `translateX(${
                           currentIndexCard === 0
@@ -99,7 +101,7 @@ const Home = () => {
                           ? "z-10"
                           : "z-0"
                       }`}
-                      src="../assets/TurmericPowder.jpg"
+                      src={TurmericPowder}
                       style={{
                         transform: `translateX(${
                           currentIndexCard === 1
@@ -118,7 +120,7 @@ const Home = () => {
                           ? "z-10"
                           : "z-0"
                       }`}
-                      src="./src/assets/GiantGingerPowder.jpg"
+                      src={GiantGingerPowder}
                       style={{
                         transform: `translateX(${
                           currentIndexCard === 2
