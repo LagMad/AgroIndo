@@ -80,7 +80,7 @@ const Home = () => {
                           ? "z-10"
                           : "z-0"
                       }`}
-                      src="/src/assets/Konjac.png"
+                      src="../src/assets/Konjac.png"
                       style={{
                         transform: `translateX(${
                           currentIndexCard === 0
@@ -99,7 +99,7 @@ const Home = () => {
                           ? "z-10"
                           : "z-0"
                       }`}
-                      src="/src/assets/TurmericPowder.jpg"
+                      src="../assets/TurmericPowder.jpg"
                       style={{
                         transform: `translateX(${
                           currentIndexCard === 1
@@ -118,7 +118,7 @@ const Home = () => {
                           ? "z-10"
                           : "z-0"
                       }`}
-                      src="/src/assets/GiantGingerPowder.jpg"
+                      src="./src/assets/GiantGingerPowder.jpg"
                       style={{
                         transform: `translateX(${
                           currentIndexCard === 2
