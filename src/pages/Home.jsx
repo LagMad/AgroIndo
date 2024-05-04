@@ -6,6 +6,7 @@ import Button from "../components/ui/Button";
 import ContactPlant from "../assets/ContactPlant.png";
 import ProductHighlight from "../utils/ProductHighlight.json";
 import SVGs from "../components/shared/SVGs";
+import KonjacPowder from "../assets/Konjac.png"
 
 const Home = () => {
   const navigate = useNavigate();
@@ -66,19 +67,20 @@ const Home = () => {
             </div> */}
             <div className="flex flex-row w-full justify-center items-center">
               <div className="flex flex-col w-1/2 justify-center items-center">
-                <div className="flex relative bg-cust-darker-green w-[calc(100%-180px)] h-96 mr-48 rounded-r-[44px] mb-40">
+                <div className="flex relative bg-cust-darker-green w-[calc(100%-180px)] h-96 mr-48 rounded-r-[44px] mb-44 px-20">
                   <p className="text-3xl font-bold text-white pt-7 pl-5">
                     Explore Our Products!
                   </p>
-                  <div className="absolute-wrapper flex flex-row top-[40%] left-16 z-0">
-                    <div
-                      className={`carousel-item bg-ProductKONJAC w-72 h-72 rounded-2xl bg-no-repeat overflow-hidden bg-center bg-cover ${
+                  <div className="absolute-wrapper w-[900px] flex flex-row top-[170px] left-[120px] z-0">
+                    <img
+                      className={`carousel-item w-[250px] h-[250px] rounded-2xl bg-no-repeat overflow-hidden object-center object-cover ${
                         currentIndexCard === 0
                           ? "z-20"
                           : currentIndexCard === 1
                           ? "z-10"
                           : "z-0"
                       }`}
+                      src="src/assets/Konjac.png"
                       style={{
                         transform: `translateX(${
                           currentIndexCard === 0
@@ -89,14 +91,15 @@ const Home = () => {
                         }) scale(${currentIndexCard === 0 ? 1.5 : 1})`,
                       }}
                     />
-                    <div
-                      className={`carousel-item bg-ProductTURMERIC w-72 h-72 rounded-2xl bg-no-repeat overflow-hidden bg-center bg-cover ${
+                    <img
+                      className={`carousel-item w-[250px] h-[250px] rounded-2xl bg-no-repeat overflow-hidden object-center object-cover ${
                         currentIndexCard === 1
                           ? "z-20"
                           : currentIndexCard === 2
                           ? "z-10"
                           : "z-0"
                       }`}
+                      src="src/assets/TurmericPowder.jpg"
                       style={{
                         transform: `translateX(${
                           currentIndexCard === 1
@@ -107,14 +110,15 @@ const Home = () => {
                         }) scale(${currentIndexCard === 1 ? 1.5 : 1})`,
                       }}
                     />
-                    <div
-                      className={`carousel-item bg-ProductGIANTGINGER w-72 h-72 rounded-2xl bg-no-repeat overflow-hidden bg-center bg-cover ${
+                    <img
+                      className={`carousel-item w-[250px] h-[250px] rounded-2xl overflow-hidden object-center object-cover ${
                         currentIndexCard === 2
                           ? "z-20"
                           : currentIndexCard === 0
                           ? "z-10"
                           : "z-0"
                       }`}
+                      src="src/assets/GiantGingerPowder.jpg"
                       style={{
                         transform: `translateX(${
                           currentIndexCard === 2
