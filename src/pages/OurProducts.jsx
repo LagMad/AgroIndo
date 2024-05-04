@@ -10,7 +10,7 @@ import BestProductCard from "../components/shared/BestProductCard";
 import Konjac from "../assets/Konjac.png";
 import Turmeric from "../assets/TurmericPowder.jpg";
 import GiantGinger from "../assets/GiantGingerPowder.jpg";
-import DurianCoffee from "../assets/GiantGingerPowder.jpg";
+import DurianCoffee from "../assets/DurianCoffee.jpg";
 import BananaFlour from "../assets/BananaFlour.jpg";
 import BananaLeaf from "../assets/BananaLeaf.jpg";
 
@@ -108,7 +108,7 @@ const OurProducts = () => {
               isScaled={currentIndexCard == 5}
             />
             <ProductCard
-              image={Konjac}
+              image={BananaLeaf}
               name={"BANANA LEAF"}
               description={
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
