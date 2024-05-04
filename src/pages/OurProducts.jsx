@@ -6,6 +6,14 @@ import ProductCard from "../components/shared/ProductCard";
 import Button from "../components/ui/Button";
 import BestProductCard from "../components/shared/BestProductCard";
 
+// Images
+import Konjac from "../assets/Konjac.png";
+import Turmeric from "../assets/TurmericPowder.jpg";
+import GiantGinger from "../assets/GiantGingerPowder.jpg";
+import DurianCoffee from "../assets/GiantGingerPowder.jpg";
+import BananaFlour from "../assets/BananaFlour.jpg";
+import BananaLeaf from "../assets/BananaLeaf.jpg";
+
 // Utilities
 import ProductsDataDummy from "../utils/Products.json";
 import BestSellingDataDummy from "../utils/BestSelling.json";
@@ -51,7 +59,63 @@ const OurProducts = () => {
               }%)`,
             }}
           >
-            {ProductsDataDummy.map((card, index) => (
+            <ProductCard
+              image={Konjac}
+              name={"KONJAC"}
+              description={
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              }
+              isScaled={currentIndexCard == 0}
+            />
+            <ProductCard
+              image={Turmeric}
+              name={"TURMERIC"}
+              description={
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              }
+              isScaled={currentIndexCard == 1}
+            />
+            <ProductCard
+              image={GiantGinger}
+              name={"GIANT GINGER"}
+              description={
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              }
+              isScaled={currentIndexCard == 2}
+            />
+            <ProductCard
+              image={DurianCoffee}
+              name={"DURIAN COFFEE"}
+              description={
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              }
+              isScaled={currentIndexCard == 3}
+            />
+            <ProductCard
+              image={BananaFlour}
+              name={"BANANA FLOUR"}
+              description={
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              }
+              isScaled={currentIndexCard == 4}
+            />
+            <ProductCard
+              image={Konjac}
+              name={"KONJAC POWDER"}
+              description={
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              }
+              isScaled={currentIndexCard == 5}
+            />
+            <ProductCard
+              image={Konjac}
+              name={"BANANA LEAF"}
+              description={
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+              }
+              isScaled={currentIndexCard == 6}
+            />
+            {/* {ProductsDataDummy.map((card, index) => (
               <ProductCard
                 key={index}
                 className={`bg-Product${card.name}`}
@@ -60,7 +124,7 @@ const OurProducts = () => {
                 description={card.description}
                 isScaled={currentIndexCard == index}
               />
-            ))}
+            ))} */}
           </div>
           <div className="flex flex-row w-full justify-between items-center">
             <div className="flex flex-row w-1/3 justify-center items-center">
@@ -107,14 +171,18 @@ const OurProducts = () => {
             WE ONLY SELL OUR BEST PRODUCTS
           </div>
           <div className="grid grid-cols-2 gap-16">
-            {BestSellingDataDummy.map((card, index) => (
+            <BestProductCard image={DurianCoffee} name={"Durian Coffee"} />
+            <BestProductCard image={BananaFlour} name={"Banana Flour (Musa Paradisiaca)"} />
+            <BestProductCard image={Konjac} name={"Konjac Powder (Amorphophallus Muelleri)"} />
+            <BestProductCard image={BananaLeaf} name={"Konjac Powder (Amorphophallus Muelleri)"} />
+            {/* {BestSellingDataDummy.map((card, index) => (
               <BestProductCard
                 key={index}
                 image={card.image}
                 imageName={card.imageName}
                 name={card.name}
               />
-            ))}
+            ))} */}
           </div>
         </div>
       </div>

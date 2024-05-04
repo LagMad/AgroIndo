@@ -1,22 +1,22 @@
 [
     {
-        "image": "/src/assets/DurianCoffee.jpg",
+        "image": "../assets/DurianCoffee.jpg",
         "imageName": "DURIANCOFFEE",
         "name": "Durian Coffee"
     },
     {
-        "image": "/src/assets/BananaFlour.jpg",
+        "image": "../assets/BananaFlour.jpg",
         "imageName": "BANANAFLOUR",
         "name": "Banana Flour (Musa Paradisiaca)"
     },
     {
-        "image": "/src/assets/Konjac.png",
+        "image": "../assets/Konjac.png",
         "imageName": "KONJACPOWDER",
         "name": "Konjac Powder (Amorphophallus Muelleri)"
     },
     {
-        "image": "/src/assets/BananaLeaf.jpg",
+        "image": "../assets/BananaLeaf.jpg",
         "imageName": "BANANALEAF",
-        "name": "Banana Leaf"
+        "name": "Konjac Powder (Amorphophallus Muelleri)"
     }
 ]
