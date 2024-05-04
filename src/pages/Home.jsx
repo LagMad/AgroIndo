@@ -8,7 +8,7 @@ import ProductHighlight from "../utils/ProductHighlight.json";
 import SVGs from "../components/shared/SVGs";
 import KonjacPowder from "../assets/Konjac.png"
 import TurmericPowder from "../assets/TurmericPowder.jpg";
-import GiantGingerPowder from  "./src/assets/GiantGingerPowder.jpg"
+import GiantGingerPowder from  "../src/assets/GiantGingerPowder.jpg"
 
 const Home = () => {
   const navigate = useNavigate();
