@@ -16,7 +16,7 @@
   src: url('./assets/fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
 }
 
-.absolute-wrapper {
+/* .absolute-wrapper {
   position: absolute;
   flex-direction: row;
 }
@@ -35,4 +35,4 @@
 
 .carousel-item:nth-child(3) {
   transform: translateX(-200%);
-}
+} */
