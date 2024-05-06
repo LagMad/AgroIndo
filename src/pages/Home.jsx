@@ -36,7 +36,7 @@ const Home = () => {
         {/* THE REST */}
         <div className="flex flex-col min-h-screen w-full z-10 bg-HomeBG bg-no-repeat bg-cover gap-10 sm:gap-20">
           {/* ABOUT US */}
-          <div className="flex flex-col md:flex-row w-full justify-center items-center px-10 md:px-20 lg:px-64 gap-10 md:gap-28 mb-32">
+          <div className="flex flex-col-reverse md:flex-row w-full justify-center items-center px-10 md:px-20 lg:px-64 gap-36 sm:gap-28 mb-32">
             <div className="flex flex-col w-full md:w-1/2 sm:w-5/12 text-cust-dark-green gap-4">
               <div className="font-black font-Playfair text-4xl">About Us</div>
               <div className="font-medium font-Montserrat text-[14px] text-justify">
@@ -162,10 +162,10 @@ const Home = () => {
 
           {/* CONTACT US */}
           <div className="flex flex-row h-auto w-full bg-transparent pt-0 md:pt-32 pb-10 sm:pb-28 md:pb-44 justify-center items-center">
-            <div className="flex flex-col sm:flex-row h-auto sm:h-[350px] w-full px-10 md:px-20 py-5 sm:py-0 bg-cust-light-green overflow-visible justify-center sm:justify-end items-center">
+            <div className="flex flex-row h-[450px] sm:h-[350px] w-full px-10 md:px-20 py-5 sm:py-0 gap-5 sm:gap-0 bg-cust-light-green overflow-visible justify-center sm:justify-end items-center">
               <div className="relative flex w-full sm:w-5/12 overflow-visible justify-center">
                 <img
-                  className="hidden sm:absolute -bottom-60 right-5 sm:right-10 md:right-52  h-[480px] md:h-[600px]"
+                  className="sm:absolute -bottom-60 right-5 sm:right-10 md:right-52  h-[300px] sm:h-[480px] md:h-[600px]"
                   src={ContactPlant}
                   alt="plant"
                 />
@@ -175,6 +175,7 @@ const Home = () => {
                   Mrs. Rosalina Tethool (Founder)
                   <br />
                   Mobile Phone: +62 823-3745-8131 (Whatsapp)
+                  <br />
                   <br />
                   Whether you’re looking for answers, wish to solve a problem,
                   or just wish to let us know how we did, you’ll find lots of

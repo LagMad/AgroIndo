@@ -16,9 +16,9 @@ const Button = ({
   const getButtonVariation = (variation, path) => {
     switch (variation) {
       case "primary-rectangle":
-        return "text-xl py-2 md:py-2 px-3 md:px-10 bg-cust-dark-green hover:bg-cust-darker-green rounded-full text-cust-light-cream hover:text-cust-orange-normal border-transparent border-2 hover:border-2 hover:border-cust-darker-green font-black drop-shadow-lg";
+        return "text-base sm:text-xl py-2 md:py-2 px-3 md:px-10 bg-cust-dark-green hover:bg-cust-darker-green rounded-full text-cust-light-cream hover:text-cust-orange-normal border-transparent border-2 hover:border-2 hover:border-cust-darker-green font-black drop-shadow-lg";
       case "secondary-rectangle":
-        return "text-[14px] py-1 md:py-2 px-7 md:px-12 bg-cust-dark-green hover:bg-cust-darker-green rounded-full text-cust-light-cream hover:text-cust-light-cream border-transparent border-2 hover:border-2 hover:border-cust-darker-green font-extrabold drop-shadow-lg";
+        return "text-base py-1 md:py-2 px-7 md:px-12 bg-cust-dark-green hover:bg-cust-darker-green rounded-full text-cust-light-cream hover:text-cust-light-cream border-transparent border-2 hover:border-2 hover:border-cust-darker-green font-extrabold drop-shadow-lg";
       case "primary-round":
         return "bg-cust-dark-green hover:bg-cust-darker-green py-2 px-4 rounded-full text-cust-light-cream border-transparent border-2 hover:border-2 hover:border-cust-darker-green font-extrabold drop-shadow-lg";
       case "secondary-round":

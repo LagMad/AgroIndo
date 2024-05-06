@@ -44,14 +44,14 @@ const OurProducts = () => {
 
   return (
     <MainLayout>
-      <div className="flex flex-col w-full bg-OurProductsBG bg-cover bg-no-repeat min-h-screen justify-center items-center">
+      <div className="flex flex-col w-full bg-OurProductsBG bg-cover bg-no-repeat min-h-screen justify-center items-center gap-16">
         {/* OUR PRODUCTS*/}
-        <div className="flex flex-col w-full py-16 justify-center items-center gap-16 overflow-hidden">
-          <div className="text-4xl text-cust-dark-brown font-Playfair font-bold">
+        <div className="flex flex-col w-full pt-6 sm:pt-16 justify-center items-center gap-10 sm:gap-16 overflow-hidden">
+          <div className="text-3xl sm:text-4xl text-cust-dark-brown font-Playfair font-bold">
             OUR PRODUCTS
           </div>
           <div
-            className="flex flex-row max-w-screen justify-center items-center gap-10 transition-all duration-500 transform ease-in-out"
+            className="flex flex-row max-w-screen justify-center items-center gap-5 sm:gap-10 transition-all duration-500 transform ease-in-out"
             style={{
               transform: `translateX(${
                 Math.floor(numCardsToShow / 2) * (100 / numCardsToShow) -
@@ -126,8 +126,8 @@ const OurProducts = () => {
               />
             ))} */}
           </div>
-          <div className="flex flex-row w-full justify-between items-center">
-            <div className="flex flex-row w-1/3 justify-center items-center">
+          <div className="flex flex-col-reverse lg:flex-row gap-5 sm:gap-8 md:gap-5 lg:gap-0 px-20 w-full justify-between items-center">
+            <div className="flex flex-row w-full sm:w-1/3 justify-center lg:justify-start xl:justify-center items-center">
               <div className="flex flex-row justify-center items-center gap-4">
                 {[...Array(numCardsToShow).keys()].map((idx) => (
                   <hr
@@ -141,12 +141,12 @@ const OurProducts = () => {
                 ))}
               </div>
             </div>
-            <div className="flex flex-row w-1/3 justify-center items-center">
+            <div className="flex flex-row w-full sm:w-1/3 justify-center items-center">
               <Button variation={"secondary-rectangle"} type={"button"}>
                 See More
               </Button>
             </div>
-            <div className="flex flex-row w-1/3 justify-center items-center gap-4">
+            <div className="flex flex-row w-full sm:w-1/3 justify-center lg:justify-end xl:justify-center items-center gap-4">
               <Button
                 variation={"primary-round"}
                 type={"button"}
@@ -166,11 +166,11 @@ const OurProducts = () => {
         </div>
 
         {/* BEST PRODUCTS */}
-        <div className="flex flex-col w-full py-16 justify-center items-center gap-10 overflow-hidden">
-          <div className="text-4xl text-cust-dark-brown font-Playfair font-bold">
+        <div className="flex flex-col w-full px-10 md:px-20 pb-16 justify-center items-center gap-10 overflow-hidden">
+          <div className="text-3xl sm:text-4xl text-center text-cust-dark-brown font-Playfair font-bold">
             WE ONLY SELL OUR BEST PRODUCTS
           </div>
-          <div className="grid grid-cols-2 gap-16">
+          <div className="grid grid-cols-2 gap-5 sm:gap-8 md:gap-10">
             <BestProductCard image={DurianCoffee} name={"Durian Coffee"} />
             <BestProductCard image={BananaFlour} name={"Banana Flour (Musa Paradisiaca)"} />
             <BestProductCard image={Konjac} name={"Konjac Powder (Amorphophallus Muelleri)"} />
