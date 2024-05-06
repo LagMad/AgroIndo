@@ -8,7 +8,9 @@ const Footer = () => {
     <div className="flex flex-col w-full h-auto font-Montserrat justify-center items-center px-10 md:px-20 bg-cust-darker-green text-cust-light-cream rounded-t-[56px] drop-shadow-2xl py-12">
       <div className="flex flex-col lg:flex-row w-full justify-center lg:justify-between items-center lg:items-stretch gap-10">
         <div className="flex flex-col w-full lg:w-1/3 h-full justify-center lg:justify-start items-center lg:items-start gap-2 lg:gap-3">
-          <div className="flex w-full font-bold font-Playfair text-3xl text-center lg:text-left justify-center lg:justify-start">AgroIndo</div>
+          <div className="flex w-full font-bold font-Playfair text-3xl text-center lg:text-left justify-center lg:justify-start">
+            AgroIndo
+          </div>
           <div className="flex flex-row font-Montserrat text-lg items-center gap-4">
             <SVGs.Location width={"24"} height={""} fillColor="#F8FAE5" />
             <div className="text-[14px]">
@@ -26,17 +28,31 @@ const Footer = () => {
         </div>
         <div className="flex flex-col w-full lg:w-1/3 justify-between items-center gap-3 lg:gap-10">
           <div className="flex flex-row justify-center items-center gap-10">
-            <button>
+            <button
+              onClick={() => {
+                window.open("https://telegram.org/"), "_blank";
+              }}
+            >
               <SVGs.Telegram width="50" height="50" />
             </button>
-            <button>
+            <button
+              onClick={() => {
+                window.open("https://web.whatsapp.com/"), "_blank";
+              }}
+            >
               <SVGs.WhatsApp width="50" height="50" />
             </button>
-            <button>
+            <button
+              onClick={() => {
+                window.open("https://instagram.com/agroindo.id"), "_blank";
+              }}
+            >
               <SVGs.InstagramRound width="50" height="50" />
             </button>
           </div>
-          <div className="text-xl font-bold font-Playfair">CV. Agroindo Cipta Sejahtera</div>
+          <div className="text-xl font-bold font-Playfair">
+            CV. Agroindo Cipta Sejahtera
+          </div>
         </div>
         <div className="flex flex-col justify-center lg:justify-start items-center w-full lg:w-1/3">
           <div className="flex flex-col gap-3 lg:gap-4 self-center lg:self-end">

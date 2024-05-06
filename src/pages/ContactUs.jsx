@@ -84,6 +84,7 @@ const ContactUs = () => {
             }`}
             onMouseEnter={() => handleHover("email", true)}
             onMouseLeave={() => handleHover("email", false)}
+            onClick={() => {window.open("https://www.gmail.com"), "_blank"}}
           >
             <div className="px-10 sm:px-auto">
               <SVGs.Email fillColor={isEmailHovered ? "white" : "black"} />
@@ -102,6 +103,7 @@ const ContactUs = () => {
             }`}
             onMouseEnter={() => handleHover("telegram", true)}
             onMouseLeave={() => handleHover("telegram", false)}
+            onClick={() => {window.open("https://www.telegram.org"), "_blank"}}
           >
             <div className="px-10 sm:px-auto">
               <SVGs.Telegram
@@ -124,6 +126,7 @@ const ContactUs = () => {
             }`}
             onMouseEnter={() => handleHover("instagram", true)}
             onMouseLeave={() => handleHover("instagram", false)}
+            onClick={() => {window.open("https://www.instagram.com/agroindo.id"), "_blank"}}
           >
             <div className="px-10 sm:px-auto">
               <SVGs.Instagram
@@ -144,6 +147,7 @@ const ContactUs = () => {
             }`}
             onMouseEnter={() => handleHover("whatsapp", true)}
             onMouseLeave={() => handleHover("whatsapp", false)}
+            onClick={() => {window.open("https://web.whatsapp.com/"), "_blank"}}
           >
             <div className="px-10 sm:px-auto">
               <SVGs.WhatsApp
@@ -155,7 +159,7 @@ const ContactUs = () => {
                 isWhatsAppHovered ? "text-white" : "text-black"
               }`}
             >
-              @agroindo.id
+              (+62) 823-3745-8131
             </div>
           </button>
         </div>
