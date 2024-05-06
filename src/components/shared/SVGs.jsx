@@ -27,7 +27,7 @@ const Location = ({ fillColor = "white", width = "24", height = "30" }) => {
   );
 };
 
-const Email = ({ fillColor = "white", width = "29", height = "23" }) => {
+const Email = ({ fillColor = "white", width = "100%", height = "100%" }) => {
   return (
     <svg
       width={width}
@@ -46,7 +46,7 @@ const Email = ({ fillColor = "white", width = "29", height = "23" }) => {
   );
 };
 
-const WhatsApp = ({ fillColor = "#B1C381", width = "50", height = "49" }) => {
+const WhatsApp = ({ fillColor = "#B1C381", width = "100%", height = "100%" }) => {
   return (
     <svg
       width={width}
@@ -79,7 +79,7 @@ const WhatsApp = ({ fillColor = "#B1C381", width = "50", height = "49" }) => {
   );
 };
 
-const Telegram = ({ fillColor = "#B1C381", width = "50", height = "49" }) => {
+const Telegram = ({ fillColor = "#B1C381", width = "100%", height = "100%" }) => {
   return (
     <svg
       width={width}
@@ -143,7 +143,7 @@ const Compass = ({ fillColor = "#141C24", width = "166", height = "166" }) => {
   );
 };
 
-const Instagram = ({ fillColor = "black", width = "87", height = "84" }) => {
+const Instagram = ({ fillColor = "black", width = "100%", height = "100%" }) => {
   return (
     <svg
       width={width}
@@ -174,8 +174,8 @@ const Instagram = ({ fillColor = "black", width = "87", height = "84" }) => {
 
 const InstagramRound = ({
   fillcolor = "#B1C381",
-  width = "30",
-  height = "30",
+  width = "100%",
+  height = "100%",
 }) => {
   return (
     <svg

@@ -33,12 +33,12 @@ const ContactUs = () => {
 
   return (
     <MainLayout>
-      <div className="flex flex-col w-full min-h-screen justify-center items-center gap-10 pt-10 pb-24">
+      <div className="flex flex-col w-full min-h-screen justify-center items-center gap-10 pt-10 pb-8 sm:pb-10 md:pb-12 lg:pb-16 xl:pb-24">
         <div className="text-4xl text-cust-dark-brown font-Playfair font-bold">
           CONTACT US
         </div>
-        <div className="flex flex-row w-full justify-center items-start gap-10 font-semibold font-Montserrat text-cust-dark-brown px-20">
-          <div className="flex flex-col w-1/2 justify-center items-center gap-5">
+        <div className="flex flex-col lg:flex-row w-full justify-center items-center lg:items-start gap-10 font-semibold font-Montserrat text-cust-dark-brown px-10 lg:px-20">
+          <div className="flex flex-col w-full lg:w-1/2 justify-center items-center gap-5">
             <div className="">SEND YOUR MESSAGE HERE</div>
             <div className="flex flex-col w-full gap-6">
               <div className="flex flex-col w-full justify-center items-start gap-2">
@@ -67,33 +67,29 @@ const ContactUs = () => {
                   placeholder="Your Message..."
                 ></textarea>
               </div>
-              <div className="flex w-full">
+              <div className="flex w-full justify-center lg:justify-start">
                 <Button variation={"primary-rectangle"}>Submit</Button>
               </div>
             </div>
           </div>
-          <div className="flex flex-col w-1/2 justify-center items-center gap-5">
+          <div className="flex flex-col w-full lg:w-1/2 justify-center items-center gap-5">
             <div className="">HERE'S OUR LOCATION</div>
             <img className="" src={Maps} alt="Maps" />
           </div>
         </div>
-        <div className="flex flex-row w-full justify-between px-20">
+        <div className="grid sm:flex grid-cols-2 sm:flex-row w-full justify-center px-10 md:px-20 gap-3 sm:gap-5 md:gap-6 lg:gap-8 xl:gap-10">
           <button
-            className={`flex flex-col w-[300px] h-[320px] gap-7 rounded-2xl justify-center items-center py-10 px-16 ${
+            className={`flex flex-col w-full sm:w-[170px] md:w-[150px] lg:w-[210px] xl:w-[300px] lg:h-[240px] xl:h-[300px] gap-3 sm:gap-4 md:gap-7 rounded-2xl justify-start items-center py-5 md:py-5 lg:py-7 xl:py-10 px-3 sm:px-2 md:px-5 lg:px-7 ${
               isEmailHovered ? "bg-cust-light-green" : "bg-white"
             }`}
             onMouseEnter={() => handleHover("email", true)}
             onMouseLeave={() => handleHover("email", false)}
           >
-            <div className="">
-              <SVGs.Email
-                width="120"
-                height=""
-                fillColor={isEmailHovered ? "white" : "black"}
-              />
+            <div className="px-10 sm:px-auto">
+              <SVGs.Email fillColor={isEmailHovered ? "white" : "black"} />
             </div>
             <div
-              className={`font-medium font-Montserrat text-[14px] text-center ${
+              className={`font-medium font-Montserrat text-xs xl:text-sm text-center break-all ${
                 isEmailHovered ? "text-white" : "text-black"
               }`}
             >
@@ -101,21 +97,19 @@ const ContactUs = () => {
             </div>
           </button>
           <button
-            className={`flex flex-col w-[300px] h-[320px] gap-7 rounded-2xl justify-center items-center py-10 px-16 ${
+            className={`flex flex-col w-full sm:w-[170px] md:w-[150px] lg:w-[210px] xl:w-[300px] lg:h-[240px] xl:h-[300px] gap-3 sm:gap-4 md:gap-7 rounded-2xl justify-start items-center py-5 md:py-5 lg:py-7 xl:py-10 px-3 sm:px-2 md:px-5 lg:px-7 ${
               isTelegramHovered ? "bg-cust-light-green" : "bg-white"
             }`}
             onMouseEnter={() => handleHover("telegram", true)}
             onMouseLeave={() => handleHover("telegram", false)}
           >
-            <div className="">
+            <div className="px-10 sm:px-auto">
               <SVGs.Telegram
-                width="120"
-                height=""
                 fillColor={isTelegramHovered ? "white" : "black"}
               />
             </div>
             <div
-              className={`font-medium font-Montserrat text-[14px] text-center ${
+              className={`font-medium font-Montserrat text-xs xl:text-sm text-center break-all ${
                 isTelegramHovered ? "text-white" : "text-black"
               }`}
             >
@@ -125,21 +119,19 @@ const ContactUs = () => {
             </div>
           </button>
           <button
-            className={`flex flex-col w-[300px] h-[320px] gap-7 rounded-2xl justify-center items-center py-10 px-16 ${
+            className={`flex flex-col w-full sm:w-[170px] md:w-[150px] lg:w-[210px] xl:w-[300px] lg:h-[240px] xl:h-[300px] gap-3 sm:gap-4 md:gap-7 rounded-2xl justify-start items-center py-5 md:py-5 lg:py-7 xl:py-10 px-3 sm:px-2 md:px-5 lg:px-7 ${
               isInstagramHovered ? "bg-cust-light-green" : "bg-white"
             }`}
             onMouseEnter={() => handleHover("instagram", true)}
             onMouseLeave={() => handleHover("instagram", false)}
           >
-            <div className="">
+            <div className="px-10 sm:px-auto">
               <SVGs.Instagram
-                width="120"
-                height=""
                 fillColor={isInstagramHovered ? "white" : "black"}
               />
             </div>
             <div
-              className={`font-medium font-Montserrat text-[14px] text-center ${
+              className={`font-medium font-Montserrat text-xs xl:text-sm text-center break-all ${
                 isInstagramHovered ? "text-white" : "text-black"
               }`}
             >
@@ -147,21 +139,19 @@ const ContactUs = () => {
             </div>
           </button>
           <button
-            className={`flex flex-col w-[300px] h-[320px] gap-7 rounded-2xl justify-center items-center py-10 px-16 ${
+            className={`flex flex-col w-full sm:w-[170px] md:w-[150px] lg:w-[210px] xl:w-[300px] lg:h-[240px] xl:h-[300px] gap-3 sm:gap-4 md:gap-7 rounded-2xl justify-start items-center py-5 md:py-5 lg:py-7 xl:py-10 px-3 sm:px-2 md:px-5 lg:px-7 ${
               isWhatsAppHovered ? "bg-cust-light-green" : "bg-white"
             }`}
             onMouseEnter={() => handleHover("whatsapp", true)}
             onMouseLeave={() => handleHover("whatsapp", false)}
           >
-            <div className="">
+            <div className="px-10 sm:px-auto">
               <SVGs.WhatsApp
-                width="120"
-                height=""
                 fillColor={isWhatsAppHovered ? "#B1C381" : "black"}
               />
             </div>
             <div
-              className={`font-medium font-Montserrat text-[14px] text-center ${
+              className={`font-medium font-Montserrat text-xs xl:text-sm text-center break-all ${
                 isWhatsAppHovered ? "text-white" : "text-black"
               }`}
             >

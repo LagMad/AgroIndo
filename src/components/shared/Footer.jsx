@@ -27,10 +27,10 @@ const Footer = () => {
         <div className="flex flex-col w-full lg:w-1/3 justify-between items-center gap-3 lg:gap-10">
           <div className="flex flex-row justify-center items-center gap-10">
             <button>
-              <SVGs.Telegram />
+              <SVGs.Telegram width="50" height="50" />
             </button>
             <button>
-              <SVGs.WhatsApp />
+              <SVGs.WhatsApp width="50" height="50" />
             </button>
             <button>
               <SVGs.InstagramRound width="50" height="50" />
