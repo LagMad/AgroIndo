@@ -39,7 +39,7 @@ const Home = () => {
           <div className="flex flex-col-reverse md:flex-row w-full justify-center items-center px-10 md:px-20 lg:px-64 gap-36 sm:gap-28 mb-32">
             <div className="flex flex-col w-full md:w-1/2 sm:w-5/12 text-cust-dark-green gap-4">
               <div className="font-black font-Playfair text-4xl">About Us</div>
-              <div className="font-medium font-Montserrat text-[14px] text-justify">
+              <div className="font-medium font-Montserrat text-[17px] text-justify">
                 AgroIndo is dedicated to showcasing Indonesia's natural bounty
                 to the global stage. We take pride in introducing
                 premium-quality powdered products derived from Indonesia's rich
