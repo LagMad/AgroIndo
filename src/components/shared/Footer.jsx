@@ -9,9 +9,12 @@ const instagramAccounts = [
   "https://www.instagram.com/wchrispradayana/"
 ];
 
-function getRandomInstagramAccount() {
-  const randomIndex = Math.floor(Math.random() * instagramAccounts.length);
-  return instagramAccounts[randomIndex];
+let currentIndex = 0;
+
+function getNextInstagramAccount() {
+  const nextIndex = currentIndex % instagramAccounts.length;
+  currentIndex++;
+  return instagramAccounts[nextIndex];
 }
 
 const Footer = () => {
@@ -80,7 +83,7 @@ const Footer = () => {
         <div
           className="relative group flex text-center"
           onClick={() => {
-            window.open(getRandomInstagramAccount(), "_blank", "noopener noreferrer");
+            window.open(getNextInstagramAccount(), "_blank", "noopener noreferrer");
           }}
           style={{ cursor: "pointer" }}
         >
