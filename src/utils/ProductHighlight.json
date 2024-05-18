@@ -2,16 +2,16 @@
     {
         "image": "/src/assets/Konjac.png",
         "name": "Konjac Powder (Amorphophallus Muelleri)",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "description": "Collaborating with local sources in Eastern Indonesia, especially East Nusa Tenggara, we process top-quality raw materials in Surabaya and Jakarta. Our continuous production is consistently exported to countries like Japan."
     },
     {
         "image": "/src/assets/TurmericPowder.jpg",
         "name": "Turmeric Powder (Curcuma Longa)",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "description": "Working with local sources in Eastern Indonesia, we process top-quality raw materials in Surabaya and Jakarta. Our ongoing production is exported to countries like Japan and China, where ginger is used for sweeteners and herbal products."
     },
     {
         "image": "/src/assets/GiantGingerPowder.jpg",
         "name": "Giant Ginger Powder (Zingiber Officinale Rosc.)",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "description": "Working with local sources in Eastern Indonesia, we process top-quality raw materials in Surabaya and Jakarta. Our ongoing production is exported to several countries, where turmeric's benefits are widely used in herbal blends and processed foods."
     }
 ]

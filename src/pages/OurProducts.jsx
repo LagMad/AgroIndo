@@ -11,6 +11,8 @@ import Konjac from "../assets/Konjac.png";
 import Turmeric from "../assets/TurmericPowder.jpg";
 import GiantGinger from "../assets/GiantGingerPowder.jpg";
 import DurianCoffee from "../assets/DurianCoffee.jpg";
+import Curcuma from "../assets/Curcuma.jpg";
+import CoffeeBean from "../assets/CoffeeBean.jpg";
 import BananaFlour from "../assets/BananaFlour.jpg";
 import BananaLeaf from "../assets/BananaLeaf.jpg";
 
@@ -63,7 +65,7 @@ const OurProducts = () => {
               image={Konjac}
               name={"KONJAC"}
               description={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                "A plant native to East Asia, offers a low-calorie, high-fiber alternative for healthy eating."
               }
               isScaled={currentIndexCard == 0}
             />
@@ -71,7 +73,7 @@ const OurProducts = () => {
               image={Turmeric}
               name={"TURMERIC"}
               description={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                "Prized for its vibrant color and potent health benefits, is a globally cherished spice."
               }
               isScaled={currentIndexCard == 1}
             />
@@ -79,31 +81,31 @@ const OurProducts = () => {
               image={GiantGinger}
               name={"GIANT GINGER"}
               description={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                "Prized for its robust flavor and impressive size, adds a punch to dishes and health remedies alike."
               }
               isScaled={currentIndexCard == 2}
             />
             <ProductCard
-              image={DurianCoffee}
-              name={"DURIAN COFFEE"}
+              image={Curcuma}
+              name={"CURCUMA"}
               description={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                "Prized for its vibrant color and potent anti-inflammatory properties, is a staple spice in cuisines worldwide."
               }
               isScaled={currentIndexCard == 3}
+            />         
+            <ProductCard
+              image={CoffeeBean}
+              name={"COFFEE BEAN"}
+              description={
+                "Renowned for their rich flavor and unique aroma, captivate coffee enthusiasts worldwide."
+              }
+              isScaled={currentIndexCard == 4}
             />
             <ProductCard
               image={BananaFlour}
               name={"BANANA FLOUR"}
               description={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-              }
-              isScaled={currentIndexCard == 4}
-            />
-            <ProductCard
-              image={Konjac}
-              name={"KONJAC POWDER"}
-              description={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                "Derived from bananas, provides a gluten-free and nutrient-rich alternative for baking and cooking purposes."
               }
               isScaled={currentIndexCard == 5}
             />
@@ -111,10 +113,10 @@ const OurProducts = () => {
               image={BananaLeaf}
               name={"BANANA LEAF"}
               description={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                "A versatile and eco-friendly packaging option for diverse culinary needs."
               }
               isScaled={currentIndexCard == 6}
-            />
+            />   
             {/* {ProductsDataDummy.map((card, index) => (
               <ProductCard
                 key={index}
@@ -171,10 +173,10 @@ const OurProducts = () => {
             WE ONLY SELL OUR BEST PRODUCTS
           </div>
           <div className="grid grid-cols-2 gap-5 sm:gap-8 md:gap-10">
-            <BestProductCard image={DurianCoffee} name={"Durian Coffee"} />
+            <BestProductCard image={CoffeeBean} name={"Roasted Coffee Bean"} />
             <BestProductCard image={BananaFlour} name={"Banana Flour (Musa Paradisiaca)"} />
             <BestProductCard image={Konjac} name={"Konjac Powder (Amorphophallus Muelleri)"} />
-            <BestProductCard image={BananaLeaf} name={"Konjac Powder (Amorphophallus Muelleri)"} />
+            <BestProductCard image={BananaLeaf} name={"Banana Leaf"} />
             {/* {BestSellingDataDummy.map((card, index) => (
               <BestProductCard
                 key={index}

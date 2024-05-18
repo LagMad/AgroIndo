@@ -177,7 +177,7 @@ const Home = () => {
                   Mobile Phone: +62 823-3745-8131 (Whatsapp)
                   <br />
                   <br />
-                  Whether you’re looking for answers, wish to solve a problem,
+                  Whether you’re looking for answers, wish to solve a problem,
                   or just wish to let us know how we did, you’ll find lots of
                   methods to call us right here. We’ll assist you solve your
                   issues rapidly and easily, getting you back to more important
