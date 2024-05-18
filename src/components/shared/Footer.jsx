@@ -72,7 +72,7 @@ const Footer = () => {
             <div className="font-Playfair font-bold text-xl lg:text-3xl text-center lg:text-right">
               In Cooperation With
             </div>
-            <a href="https://cartrack.id/" target="_blank" rel="noopener noreferrer">
+            <a href="https://cartrack.id/en" target="_blank" rel="noopener noreferrer">
               <img className="w-72 hover:cursor-pointer" src={CartrackLogo} alt="cartrack logo" />
             </a>
           </div>

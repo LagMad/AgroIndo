@@ -37,6 +37,10 @@ const OurProducts = () => {
   };
 
   useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
+
+  useEffect(() => {
     setProductCards(ProductsDataDummy);
   }, []);
 

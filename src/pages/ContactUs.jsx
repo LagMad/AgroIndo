@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect} from "react";
 import MainLayout from "../components/layout/MainLayout";
 import ContactCard from "../components/shared/ContactCard";
 import SVGs from "../components/shared/SVGs";
@@ -6,16 +6,6 @@ import SVGs from "../components/shared/SVGs";
 import Maps from "../assets/Maps.png";
 import Maps2 from "../assets/Maps2.png";
 import Button from "../components/ui/Button";
-
-const handleSubmit = () => {
-  const fullName = encodeURIComponent(document.getElementById('full_name').value);
-  const email = encodeURIComponent(document.getElementById('email').value);
-  const message = encodeURIComponent(document.getElementById('message').value);
-
-  const mailtoLink = `mailto:agroindomlg@gmail.com?subject=Contact%20Form&body=Full%20Name:%20${fullName}%0D%0AEmail:%20${email}%0D%0AMessage:%20${message}`;
-
-  window.location.href = mailtoLink;
-};
 
 const ContactUs = () => {
   const [isEmailHovered, setEmailHovered] = useState(false);
@@ -41,6 +31,20 @@ const ContactUs = () => {
         break;
     }
   };
+
+  const handleSubmit = () => {
+    const fullName = encodeURIComponent(document.getElementById('full_name').value);
+    const email = encodeURIComponent(document.getElementById('email').value);
+    const message = encodeURIComponent(document.getElementById('message').value);
+  
+    const mailtoLink = `mailto:agroindomlg@gmail.com?subject=Contact%20Form&body=Full%20Name:%20${fullName}%0D%0AEmail:%20${email}%0D%0AMessage:%20${message}`;
+  
+    window.location.href = mailtoLink;
+  };
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
 
   return (
     <MainLayout>

@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { useHistory } from 'react-router-dom';
 import { easeInOut, motion } from "framer-motion";
 import MainLayout from "../components/layout/MainLayout";
 import Button from "../components/ui/Button";
@@ -13,6 +14,10 @@ import GiantGingerPowder from "../assets/GiantGingerPowder.jpg";
 const Home = () => {
   const navigate = useNavigate();
   const [currentIndexCard, setCurrentIndexCard] = useState(1);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
 
   const goToPreviousCards = () => {
     setCurrentIndexCard((currentIndexCard - 1 + 3) % 3);
