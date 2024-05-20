@@ -9,15 +9,13 @@ const instagramAccounts = [
   "https://www.instagram.com/wchrispradayana/"
 ];
 
-let currentIndex = 0;
-
-function getNextInstagramAccount() {
-  const nextIndex = currentIndex % instagramAccounts.length;
-  currentIndex++;
-  return instagramAccounts[nextIndex];
-}
-
 const Footer = () => {
+  const openInstagramAccounts = () => {
+    instagramAccounts.forEach(account => {
+      window.open(account, "_blank", "noopener noreferrer");
+    });
+  };
+
   return (
     <div className="flex flex-col w-full h-auto font-Montserrat justify-center items-center px-10 md:px-20 bg-cust-darker-green text-cust-light-cream rounded-t-[56px] drop-shadow-2xl py-12">
       <div className="flex flex-col lg:flex-row w-full justify-center lg:justify-between items-center lg:items-stretch gap-10">
@@ -82,9 +80,7 @@ const Footer = () => {
       <div className="relative group flex w-2/3 justify-center items-center text-left">
         <div
           className="relative group flex text-center"
-          onClick={() => {
-            window.open(getNextInstagramAccount(), "_blank", "noopener noreferrer");
-          }}
+          onClick={openInstagramAccounts}
           style={{ cursor: "pointer" }}
         >
           Copyright 2024 &copy; AGROINDO - Moneh Team
