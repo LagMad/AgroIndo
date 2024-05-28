@@ -1,6 +1,5 @@
 import React, { useState , useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { useHistory } from 'react-router-dom';
 import { easeInOut, motion } from "framer-motion";
 import MainLayout from "../components/layout/MainLayout";
 import Button from "../components/ui/Button";
