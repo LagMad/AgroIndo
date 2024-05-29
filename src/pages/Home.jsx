@@ -14,9 +14,9 @@ const Home = () => {
   const navigate = useNavigate();
   const [currentIndexCard, setCurrentIndexCard] = useState(1);
 
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo({ top: 0, behavior: 'smooth' });
+  // }, []);
 
   const goToPreviousCards = () => {
     setCurrentIndexCard((currentIndexCard - 1 + 3) % 3);

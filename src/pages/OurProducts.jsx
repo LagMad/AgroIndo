@@ -36,9 +36,9 @@ const OurProducts = () => {
     setCurrentIndexCard((currentIndexCard + 1) % numCardsToShow);
   };
 
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo({ top: 0, behavior: 'smooth' });
+  // }, []);
 
   useEffect(() => {
     setProductCards(ProductsDataDummy);

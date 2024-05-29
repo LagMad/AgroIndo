@@ -7,19 +7,18 @@ import OurProducts from "../pages/OurProducts";
 import ContactUs from "../pages/ContactUs";
 
 const Router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Home />,
-    },
-    {
-      path: "/our-products",
-      element: <OurProducts/>
-    },
-    {
-      path: "/contact-us",
-      element: <ContactUs/>
-    }
-  ]);
-  
-  export default Router;
-  
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/our-products",
+    element: <OurProducts />
+  },
+  {
+    path: "/contact-us",
+    element: <ContactUs />
+  }
+]);
+
+export default Router;

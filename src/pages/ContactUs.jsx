@@ -42,9 +42,9 @@ const ContactUs = () => {
     window.location.href = mailtoLink;
   };
 
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo({ top: 0, behavior: 'smooth' });
+  // }, []);
 
   return (
     <MainLayout>
