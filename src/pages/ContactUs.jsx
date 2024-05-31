@@ -120,7 +120,7 @@ const ContactUs = () => {
               }`}
             onMouseEnter={() => handleHover("telegram", true)}
             onMouseLeave={() => handleHover("telegram", false)}
-            onClick={() => { window.open("https://www.telegram.org"), "_blank" }}
+            onClick={() => { window.open("https://t.me/agroindoid?text=Hello,%20I%20would%20like%20to%20buy."), "_blank" }}
           >
             <div className="px-10 sm:px-auto">
               <SVGs.Telegram

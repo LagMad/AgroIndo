@@ -43,7 +43,7 @@ const Footer = () => {
           <div className="flex flex-row justify-center items-center gap-10">
             <button
               onClick={() => {
-                window.open("https://telegram.org/"), "_blank";
+                window.open("https://t.me/agroindoid?text=Hello,%20I%20would%20like%20to%20buy."), "_blank";
               }}
             >
               <SVGs.Telegram width="50" height="50" />
