@@ -66,10 +66,10 @@ const OurProducts = () => {
             }}
           >
             <ProductCard
-              image={Konjac}
-              name={"KONJAC"}
+              image={CoffeeBean}
+              name={"COFFEE BEAN"}
               description={
-                "A plant native to East Asia, offers a low-calorie, high-fiber alternative for healthy eating."
+                "Renowned for their rich flavor and unique aroma, captivate coffee enthusiasts worldwide."
               }
               isScaled={currentIndexCard == 0}
             />
@@ -98,10 +98,10 @@ const OurProducts = () => {
               isScaled={currentIndexCard == 3}
             />         
             <ProductCard
-              image={CoffeeBean}
-              name={"COFFEE BEAN"}
+              image={Konjac}
+              name={"KONJAC"}
               description={
-                "Renowned for their rich flavor and unique aroma, captivate coffee enthusiasts worldwide."
+                "A plant native to East Asia, offers a low-calorie, high-fiber alternative for healthy eating."
               }
               isScaled={currentIndexCard == 4}
             />
