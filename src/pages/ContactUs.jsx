@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import MainLayout from "../components/layout/MainLayout";
 import ContactCard from "../components/shared/ContactCard";
 import SVGs from "../components/shared/SVGs";
@@ -32,14 +32,24 @@ const ContactUs = () => {
     }
   };
 
+  const [formData, setFormData] = useState({
+    full_name: '',
+    email: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
   const handleSubmit = () => {
-    const fullName = encodeURIComponent(document.getElementById('full_name').value);
-    const email = encodeURIComponent(document.getElementById('email').value);
-    const message = encodeURIComponent(document.getElementById('message').value);
-  
-    const mailtoLink = `mailto:agroindomlg@gmail.com?subject=Contact%20Form&body=Full%20Name:%20${fullName}%0D%0AEmail:%20${email}%0D%0AMessage:%20${message}`;
-  
-    window.location.href = mailtoLink;
+    const { full_name, email, message } = formData;
+    const subject = `Message from ${full_name}`;
+    const body = `Full Name: ${full_name}\nEmail: ${email}\n\nMessage:\n${message}`;
+    window.location.href = `mailto:agroindomlg@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
   // useEffect(() => {
@@ -63,6 +73,8 @@ const ContactUs = () => {
                   type="text"
                   name="full_name"
                   placeholder="Your Full Name..."
+                  value={formData.full_name}
+                  onChange={handleChange}
                 />
               </div>
               <div className="flex flex-col w-full justify-center items-start gap-2">
@@ -72,6 +84,8 @@ const ContactUs = () => {
                   type="text"
                   name="email"
                   placeholder="Your Email..."
+                  value={formData.email}
+                  onChange={handleChange}
                 />
               </div>
               <div className="flex flex-col w-full justify-center items-start gap-2">
@@ -80,6 +94,8 @@ const ContactUs = () => {
                   className="w-full bg-cust-grey focus:bg-white py-2 px-4 rounded-lg focus:outline-none border-2 border-transparent focus:border-cust-dark-brown"
                   name="message"
                   placeholder="Your Message..."
+                  value={formData.message}
+                  onChange={handleChange}
                 ></textarea>
               </div>
               <div className="flex w-full justify-center lg:justify-start">
