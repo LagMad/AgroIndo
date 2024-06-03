@@ -115,22 +115,19 @@ const ContactUs = () => {
         </div>
         <div className="grid sm:flex grid-cols-2 sm:flex-row w-full justify-center px-10 md:px-20 gap-3 sm:gap-5 md:gap-6 lg:gap-8 xl:gap-10">
           <button
-            className={`flex flex-col w-full sm:w-[170px] md:w-[150px] lg:w-[210px] xl:w-[300px] lg:h-[240px] xl:h-[300px] gap-3 sm:gap-4 md:gap-7 rounded-2xl justify-start items-center py-5 md:py-5 lg:py-7 xl:py-10 px-3 sm:px-2 md:px-5 lg:px-7 ${isEmailHovered ? "bg-cust-light-green" : "bg-white"
-              }`}
+            className={`flex flex-col w-full sm:w-[170px] md:w-[150px] lg:w-[210px] xl:w-[300px] lg:h-[240px] xl:h-[300px] gap-3 sm:gap-4 md:gap-7 rounded-2xl justify-start items-center py-5 md:py-5 lg:py-7 xl:py-10 px-3 sm:px-2 md:px-5 lg:px-7 ${isEmailHovered ? "bg-cust-light-green" : "bg-white"}`}
             onMouseEnter={() => handleHover("email", true)}
             onMouseLeave={() => handleHover("email", false)}
-            onClick={() => { window.open("mailto:agroindomlg@gmail.com?subject=Hello%2C%20I%20want%20to%20buy."), "_blank" }}
+            onClick={() => window.open("mailto:agroindomlg@gmail.com?subject=Hello%2C%20I%20want%20to%20buy.", "_blank")}
           >
             <div className="px-10 sm:px-auto">
               <SVGs.Email fillColor={isEmailHovered ? "white" : "black"} />
             </div>
-            <div
-              className={`font-medium font-Montserrat text-xs xl:text-sm text-center break-all ${isEmailHovered ? "text-white" : "text-black"
-                }`}
-            >
+            <div className={`font-medium font-Montserrat text-xs xl:text-sm text-center break-all ${isEmailHovered ? "text-white" : "text-black"}`}>
               agroindomlg@gmail.com
             </div>
           </button>
+
           <button
             className={`flex flex-col w-full sm:w-[170px] md:w-[150px] lg:w-[210px] xl:w-[300px] lg:h-[240px] xl:h-[300px] gap-3 sm:gap-4 md:gap-7 rounded-2xl justify-start items-center py-5 md:py-5 lg:py-7 xl:py-10 px-3 sm:px-2 md:px-5 lg:px-7 ${isTelegramHovered ? "bg-cust-light-green" : "bg-white"
               }`}
