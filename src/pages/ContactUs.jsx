@@ -110,7 +110,9 @@ const ContactUs = () => {
           </div>
           <div className="flex flex-col w-full lg:w-1/2 justify-center items-center gap-5">
             <div className="">HERE'S OUR LOCATION</div>
-            <img className="" src={Maps} alt="Maps" />
+            <a href="https://maps.app.goo.gl/qtBsRjnWUpbgLAEi8" target="_blank" rel="noopener noreferrer">
+              <img className="" src={Maps} alt="Maps" />
+            </a>
           </div>
         </div>
         <div className="grid sm:flex grid-cols-2 sm:flex-row w-full justify-center px-10 md:px-20 gap-3 sm:gap-5 md:gap-6 lg:gap-8 xl:gap-10">
