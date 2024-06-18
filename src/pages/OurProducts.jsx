@@ -148,9 +148,9 @@ const OurProducts = () => {
               </div>
             </div>
             <div className="flex flex-row w-full sm:w-1/3 justify-center items-center">
-              <Button variation={"secondary-rectangle"} type={"button"}>
+              {/* <Button variation={"secondary-rectangle"} type={"button"}>
                 See More
-              </Button>
+              </Button> */}
             </div>
             <div className="flex flex-row w-full sm:w-1/3 justify-center lg:justify-end xl:justify-center items-center gap-4">
               <Button
@@ -178,7 +178,8 @@ const OurProducts = () => {
           </div>
           <div className="grid grid-cols-2 gap-5 sm:gap-8 md:gap-10">
             <BestProductCard image={CoffeeBean} name={"Roasted Coffee Bean"} />
-            <BestProductCard image={BananaFlour} name={"Banana Flour (Musa Paradisiaca)"} />
+            <BestProductCard image={GiantGinger} name={"Giant Ginger"} />
+            {/* <BestProductCard image={BananaFlour} name={"Banana Flour (Musa Paradisiaca)"} /> */}
             <BestProductCard image={Konjac} name={"Konjac Powder (Amorphophallus Muelleri)"} />
             <BestProductCard image={BananaLeaf} name={"Banana Leaf"} />
             {/* {BestSellingDataDummy.map((card, index) => (
