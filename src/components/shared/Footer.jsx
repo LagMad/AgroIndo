@@ -64,7 +64,7 @@ const Footer = () => {
             </button>
           </div>
           <div className="text-xl font-bold font-Playfair">
-            CV. Agroindo Cipta Sejahtera
+            PT. Agroindo Cipta Sejahtera
           </div>
         </div>
         <div className="flex flex-col justify-center lg:justify-start items-center w-full lg:w-1/3">

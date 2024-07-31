@@ -23,15 +23,5 @@
         "image": "../src/assets/BananaFlour.jpg",
         "name": "BANANA FLOUR",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-    },
-    {
-        "image": "../src/assets/Konjac.png",
-        "name": "KONJAC POWDER",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-    },
-    {
-        "image": "../src/assets/BananaLeaf.jpg",
-        "name": "BANANA LEAF",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
     }
 ]

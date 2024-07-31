@@ -97,30 +97,30 @@ const OurProducts = () => {
               }
               isScaled={currentIndexCard == 3}
             />         
-            <ProductCard
+            {/* <ProductCard
               image={Konjac}
               name={"KONJAC"}
               description={
                 "A plant native to East Asia, offers a low-calorie, high-fiber alternative for healthy eating."
               }
               isScaled={currentIndexCard == 4}
-            />
+            /> */}
             <ProductCard
               image={BananaFlour}
               name={"BANANA FLOUR"}
               description={
                 "Derived from bananas, provides a gluten-free and nutrient-rich alternative for baking and cooking purposes."
               }
-              isScaled={currentIndexCard == 5}
+              isScaled={currentIndexCard == 4}
             />
-            <ProductCard
+            {/* <ProductCard
               image={BananaLeaf}
               name={"BANANA LEAF"}
               description={
                 "A versatile and eco-friendly packaging option for diverse culinary needs."
               }
-              isScaled={currentIndexCard == 6}
-            />   
+              isScaled={currentIndexCard == 5}
+            />    */}
             {/* {ProductsDataDummy.map((card, index) => (
               <ProductCard
                 key={index}
@@ -178,9 +178,9 @@ const OurProducts = () => {
           </div>
           <div className="grid grid-cols-2 gap-5 sm:gap-8 md:gap-10">
             <BestProductCard image={CoffeeBean} name={"Roasted Coffee Bean"} />
-            <BestProductCard image={GiantGinger} name={"Giant Ginger"} />
+            <BestProductCard image={GiantGinger} name={"Giant Ginger (Zingiber Officinale Var Rubrum Rhizoma)"} />
             {/* <BestProductCard image={BananaFlour} name={"Banana Flour (Musa Paradisiaca)"} /> */}
-            <BestProductCard image={Konjac} name={"Konjac Powder (Amorphophallus Muelleri)"} />
+            <BestProductCard image={Curcuma} name={"Curcuma (Curcuma domestica Val.)"} />
             <BestProductCard image={BananaLeaf} name={"Banana Leaf"} />
             {/* {BestSellingDataDummy.map((card, index) => (
               <BestProductCard
